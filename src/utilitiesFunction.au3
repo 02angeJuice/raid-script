@@ -1,62 +1,62 @@
-Func targetClick($check, $position, $addition)
-	Local $savePos = MouseGetPos()
+func targetClick($check, $position, $addition)
+	local $savePos = MouseGetPos()
 
-	If $check == 1 Then
+	if $check == 1 then
 		BlockInput(1)
 		WinActivate($win)
 		click($position[0],  $position[1]+$addition)
-		send("{ALT DOWN}")
+		Send("{ALT DOWN}")
 		Sleep(125)
-		send("{TAB}")
+		Send("{TAB}")
 		Sleep(125)
-		send("{ALT UP}")
+		Send("{ALT UP}")
 		MouseMove($savePos[0], $savePos[1], 1)
 		BlockInput(0)
-	EndIf
-EndFunc
+	endif
+endfunc
 
-Func targetClickForMember()
+func targetClickForMember()
 	BlockInput(1)
 	WinActivate($win)
-	click(175, 314)
-	click(373, 314)
-	click(569, 317)
-	click(764, 316)
-	send("{ALT DOWN}")
+	click(175, 315)
+	click(375, 315)
+	click(570, 315)
+	click(765, 315)
+	Send("{ALT DOWN}")
 	Sleep(125)
-	send("{TAB}")
+	Send("{TAB}")
 	Sleep(125)
-	send("{ALT UP}")
+	Send("{ALT UP}")
 	BlockInput(0)
-EndFunc
+endfunc
 
-Func click($positionX, $positionY)
+func click($positionX, $positionY)
 	BlockInput(1)
 	MouseMove($positionX, $positionY, 1)
 	Sleep(50)
 	MouseClick("left")
 	Sleep(125)
 	BlockInput(0)
-EndFunc
+endfunc
 
-Func color($position, $color, $addition=0)
+func color($position, $color, $addition=0)
 	FFSnapShot(0, 0, 0, 0, 1, $win)
 	$colorCode = Hex(FFGetPixel($position, 1))
 	$trimCode = StringTrimLeft($colorCode, 2)
 	$targetCode =  "0x"&$trimCode
 
-	If $targetCode == $color Then
-		If $addition == 'member' Then
+	if $targetCode == $color then
+		if $addition == 'member' then
 			targetClickForMember()
-		Else
+		else
 			targetClick(1, $position, $addition)
-		EndIf
-	Else
-		Return 0
-	EndIf
-EndFunc
+		endif
+	else
+		return 0
+	endif
+endfunc
 
-Func onExit()
+func onExit()
 	MsgBox($MB_SYSTEMMODAL, "Alert", "Exit Macro.", 10)
-	Exit
-EndFunc
+	exit
+endfunc
