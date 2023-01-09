@@ -19,3 +19,8 @@
 - สร้างห้อง หรือเข้าไปจอยในห้อง
 - เปิดไฟล์ raid_script.exe
 - ออกจากโปรแกรมกด ESC
+
+`โดน Windows Security ลบไฟล์ ⚠️ :`
+
+- ไปที่ Settings > Privacy & security > Window Security > Manage settings > Add or remove exclusions
+- เพิ่่ม Folder เข้าไป
