@@ -8,6 +8,7 @@
 
 - ฟาร์มได้ทั้งแบบ Solo หรือ Party
 - ถ้าพ่ายแพ้ จะ Re-Enter เข้ามาใหม่
+- เมื่อ Script ทำงาน เม้าส์จะคุมไม่ได้
 
 `ตั้งค่าก่อนใช้งาน:`
 
@@ -23,4 +24,4 @@
 `โดน Windows Security ลบไฟล์ ⚠️ :`
 
 - ไปที่ Settings > Privacy & security > Window Security > Manage settings > Add or remove exclusions
-- เพิ่่ม Folder เข้าไป
+- Add Folder ที่ต้องการ
