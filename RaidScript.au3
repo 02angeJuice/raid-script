@@ -33,8 +33,7 @@ func main()
 
 	while 1
 		$gMsg = GUIGetMsg()
-
-
+		
 		switch $gMsg
 			case $GUI_EVENT_CLOSE
 				exitloop
@@ -44,9 +43,7 @@ func main()
 					isRunning()
 					Sleep(500)
 				wend
-
 		endswitch
-
 	wend
 
 	; Delete the previous GUI and all controls.
