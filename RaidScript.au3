@@ -29,7 +29,7 @@ HotKeySet("{ESC}", "onExit")
 main()
 
 func main()
-	displayControl()
+	loadDisplay()
 
 	while 1
 		$gMsg = GUIGetMsg()

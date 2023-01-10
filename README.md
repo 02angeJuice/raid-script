@@ -1,5 +1,7 @@
 # Seven Knight 2 - RaidScript
 
+[![GitHub](https://flat.badgen.net/github/release/idleberg/vscode-badges)](https://github.com/idleberg/vscode-badges/releases)
+
 ## ฟาร์มตั๋วเรด 4
 
 <br>
