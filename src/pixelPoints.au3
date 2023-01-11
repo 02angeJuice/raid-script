@@ -7,8 +7,8 @@ global $memberColor = '0xFBFBFC'
 ; Re-Enter
 global $ticket = [379, 345]
 global $ticketColor = '0x121722'
-global $re = [713, 254]
-global $reColor = '0xDC9598'
+global $retry = [713, 254]
+global $retryColor = '0xDC9598'
 
 ; Alert: Party invalid state.
 global $alertMsg = [469, 314]
