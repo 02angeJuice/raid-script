@@ -56,6 +56,11 @@ func color($position, $color, $addX = 0, $addY = 0, $optional = '')
 	endif
 endfunc
 
+func setWindowSize()
+	$pos = WinGetPos($win)
+	WinMove($win, '', $pos[0], $pos[1], 960, 540)
+endfunc
+
 func onExit()
 	MsgBox($MB_SYSTEMMODAL, "Alert", "Exit Macro.", 10)
 	exit

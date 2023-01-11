@@ -30,6 +30,7 @@ main()
 
 func main()
 	loadDisplay()
+	setWindowSize()
 
 	while 1
 		$gMsg = GUIGetMsg()
