@@ -67,6 +67,13 @@ func isRunning()
 		endswitch
 	endif
 
+	if $clearButton then
+		IniWrite($config, "DefaultConfig", "ticket", 0)
+		IniWrite($config, "DefaultConfig", "retry", 0)
+	endif
+
+	GUIDelete($gMsg)
+
 	loadConfig()
 
 	if $mode == 0 then

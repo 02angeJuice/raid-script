@@ -58,7 +58,9 @@ endfunc
 
 func setWindowSize()
 	$pos = WinGetPos($win)
-	WinMove($win, '', $pos[0], $pos[1], 960, 540)
+	if $pos then
+		WinMove($win, '', $pos[0], $pos[1], 960, 540)
+	endif
 endfunc
 
 func onExit()

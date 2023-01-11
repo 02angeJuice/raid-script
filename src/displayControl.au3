@@ -109,6 +109,15 @@ func display()
 					case else
 						IniWrite($config, "DefaultConfig", "retry", 0)
 				endswitch
+
+			case $clearButton
+				if $clearButton then
+					IniWrite($config, "DefaultConfig", "ticket", 0)
+					IniWrite($config, "DefaultConfig", "retry", 0)
+					loadConfig()
+				endif
+
+
 		endswitch
 	wend
 
