@@ -1,10 +1,10 @@
-func targetClick($check, $position, $addition)
+func targetClick($check, $position, $addX, $addY)
 	local $savePos = MouseGetPos()
 
 	if $check == 1 then
 		BlockInput(1)
 		WinActivate($win)
-		click($position[0],  $position[1]+$addition)
+		click($position[0] + $addX,  $position[1] + $addY)
 		Send("{ALT DOWN}")
 		Sleep(125)
 		Send("{TAB}")
@@ -39,17 +39,17 @@ func click($positionX, $positionY)
 	BlockInput(0)
 endfunc
 
-func color($position, $color, $addition=0)
+func color($position, $color, $addX = 0, $addY = 0, $optional = '')
 	FFSnapShot(0, 0, 0, 0, 1, $win)
 	$colorCode = Hex(FFGetPixel($position, 1))
 	$trimCode = StringTrimLeft($colorCode, 2)
 	$targetCode =  "0x"&$trimCode
 
 	if $targetCode == $color then
-		if $addition == 'member' then
+		if $optional == 'member' then
 			targetClickForMember()
 		else
-			targetClick(1, $position, $addition)
+			targetClick(1, $position, $addX, $addY)
 		endif
 	else
 		return 0

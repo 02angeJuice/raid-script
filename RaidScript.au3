@@ -52,13 +52,13 @@ endfunc
 
 func isRunning()
 	if $mode == 0 then
-		color($member, $memberColor, 'member')
-		color($start, $startColor, 20)
+		color($member, $memberColor, 0, 0, 'member')
+		color($start, $startColor, 0, 20)
 	else
-		color($start, $startColor, 20)
+		color($start, $startColor, 0, 20)
 	endif
 
 	color($ticket, $ticketColor)
-	color($re, $reColor)
-	color($alertMsg, $alertMsgColor, 20)
+	color($re, $reColor, 0, 72)
+	color($alertMsg, $alertMsgColor, 0, 20)
 endfunc

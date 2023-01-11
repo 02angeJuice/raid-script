@@ -4,11 +4,11 @@ global $startColor = '0x5C79D5'
 global $member = [773, 461]
 global $memberColor = '0xFBFBFC'
 
-; Re-Enter options
+; Re-Enter
 global $ticket = [379, 345]
 global $ticketColor = '0x121722'
-global $re = [601, 326]
-global $reColor = '0x5671CF'
+global $re = [713, 254]
+global $reColor = '0xDC9598'
 
 ; Alert: Party invalid state.
 global $alertMsg = [469, 314]
