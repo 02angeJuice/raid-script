@@ -39,7 +39,7 @@ func click($positionX, $positionY)
 	BlockInput(0)
 endfunc
 
-func color($position, $color, $addX = 0, $addY = 0, $optional = '')
+func color($position, $color, $addX = 0, $addY = 0, $optional ="", $msg ='')
 	FFSnapShot(0, 0, 0, 0, 1, $win)
 	$colorCode = Hex(FFGetPixel($position, 1))
 	$trimCode = StringTrimLeft($colorCode, 2)
@@ -47,8 +47,12 @@ func color($position, $color, $addX = 0, $addY = 0, $optional = '')
 
 	if $targetCode == $color then
 		if $optional == 'member' then
+			appendLog($msg & " '" & $color & "' [" & $position[0] & ',' & $position[1] & ']')
+			ConsoleWrite($msg & " '" & $color & "' [" & $position[0] & ',' & $position[1] & ']' & @CRLF)
 			targetClickForMember()
 		else
+			appendLog($msg & " '" & $color & "' [" & $position[0] & ',' & $position[1] & ']')
+			ConsoleWrite($msg & " '" & $color & "' [" & $position[0] & ',' & $position[1] & ']' & @CRLF)
 			targetClick(1, $position, $addX, $addY)
 		endif
 	else
@@ -57,7 +61,6 @@ func color($position, $color, $addX = 0, $addY = 0, $optional = '')
 endfunc
 
 func setWindowSize()
-
 	WinActivate($win)
 	$pos = WinGetPos($win)
 	$newX = (@DesktopWidth - $pos[2]) / 2
@@ -66,5 +69,29 @@ func setWindowSize()
 	if $pos[2] <> 960 and $pos[3] <> 540 then
 		WinMove($win, '', $newX, $newY, 960, 540)
 	endif
+
+	appendLog('load setWindowSize() successful.')
+	ConsoleWrite("load setWindowSize() successful." & @CRLF)
 endfunc
 
+func onExit()
+	$set = WinGetPos("")
+	IniWrite($config, 'Settings', 'setX', $set[0])
+	IniWrite($config, 'Settings', 'setY', $set[1])
+
+
+	appendLog("set window position [" & $set[0] & ',' & $set[1] & "]" )
+
+	appendLog("app exit")
+	;~ _FileWriteLog(@ScriptDir & "\Example.log", $Edit1)
+
+	MsgBox(0, "Alert", "Exit Macro.", 10)
+	exit
+endfunc
+
+func appendLog($msg)
+	_GUICtrlEdit_AppendText($Edit1, $msg & '' & @CRLF)
+
+	_FileWriteLog(@ScriptDir & "\message.log", $msg)
+	
+endfunc

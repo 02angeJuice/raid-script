@@ -1,6 +1,7 @@
 func loadGUI()
 	#Region ### START Koda GUI section ### Form=c:\users\b0\desktop\raid_script_gui\raid-script-form.kxf
-	global $Form1_1 = GUICreate("RaidScript", 471, 184, 310, 209, $GUI_SS_DEFAULT_GUI)
+	GUICreate("RaidScript", 471, 184, iniread($config, "Settings", "setX", 0), 	iniread($config, "Settings", "setY", 0), $GUI_SS_DEFAULT_GUI)
+
 	GUISetFont(8, 400, 0, "consolas")
 	global $Tab1 = GUICtrlCreateTab(8, 8, 457, 169, $TCS_FIXEDWIDTH)
 	GUICtrlSetFont(-1, 12, 400, 0, "consolas")
@@ -15,7 +16,7 @@ func loadGUI()
 	GUICtrlSetFont(-1, 13, 800, 0, "consolas")
 	GUICtrlSetColor(-1, 0x99B4D1)
 	global $Edit1 = GUICtrlCreateEdit("", 120, 45, 345, 105)
-	GUICtrlSetData(-1, "Edit1")
+	GUICtrlSetData(-1, '')
 	GUICtrlSetFont(-1, 10, 400, 0, "consolas")
 
 	;~ TabSheet 2
@@ -26,19 +27,20 @@ func loadGUI()
 	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
 	global $clearButton = GUICtrlCreateButton("Clear", 376, 133, 75, 25)
 	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
-	;~ $Combo1 = GUICtrlCreateCombo("", 176, 52, 49, 25, $CBS_DROPDOWN)
-	;~ GUICtrlSetFont(-1, 13, 400, 0, "consolas")
-	global $labelTab2 = GUICtrlCreateLabel("Set party member", 24, 56, 148, 24)
-	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
 
 	;~ TabSheet 3
 	global $TabSheet3 = GUICtrlCreateTabItem("Help")
 	GUICtrlCreateTabItem("")
 	GUISetState(@SW_SHOW)
 	#EndRegion ### END Koda GUI section ###
+
+	appendLog('load loadGUI() successful.')
+	ConsoleWrite("load loadGUI() successful." & @CRLF)
 endfunc
 
 func loadSettings()
+	setWindowSize()
+
 	local $startSetting = control('start')
 	local $ticketSetting = control('ticket')
 	local $retrySetting = control('retry')
@@ -46,30 +48,50 @@ func loadSettings()
 	if $startSetting == 1 then
 		IniWrite($config, "DefaultConfig", "start", 0)
 	endif
-	if $ticketSetting == 1 then GUICtrlSetState($ticketCheckbox, $GUI_CHECKED)
-	if $retrySetting == 1 then GUICtrlSetState($retryCheckbox, $GUI_CHECKED)
+	if $ticketSetting == 1 then
+		GUICtrlSetState($ticketCheckbox, $GUI_CHECKED)
+		appendLog('set ticket - enable')
+		ConsoleWrite("set ticket - enable" & @CRLF)
+	endif
+	if $retrySetting == 1 then
+		GUICtrlSetState($retryCheckbox, $GUI_CHECKED)
+		appendLog('set retry - enable')
+		ConsoleWrite("set retry - enable" & @CRLF)
+	endif
 endfunc
 
-func guiEvent($msg, $boolean)
+func guiEvent($msg, $boolean, $message='')
 		switch ($msg)
 			case $msg == 'start'
 				if $boolean == true then
+					appendLog($message)
+					ConsoleWrite($message & @CRLF)
 					IniWrite($config, "DefaultConfig", "start", 1)
 				else
-					IniWrite($config, "DefaultConfig", "start", 0)	
+					appendLog($message)
+					ConsoleWrite($message & @CRLF)
+					IniWrite($config, "DefaultConfig", "start", 0)
 				endif
 
 			case $msg == 'ticket'
 				if $boolean == true then
+					appendLog($message)
+					ConsoleWrite($message & @CRLF)
 					IniWrite($config, "DefaultConfig", "ticket", 1)
 				else
+					appendLog($message)
+					ConsoleWrite($message & @CRLF)
 					IniWrite($config, "DefaultConfig", "ticket", 0)
 				endif
 
 			case $msg == 'retry'
 				if $boolean == true then
+					appendLog($message)
+					ConsoleWrite($message & @CRLF)
 					IniWrite($config, "DefaultConfig", "retry", 1)
 				else
+					appendLog($message)
+					ConsoleWrite($message & @CRLF)
 					IniWrite($config, "DefaultConfig", "retry", 0)
 				endif
 		endswitch
@@ -78,7 +100,6 @@ endfunc
 ;~ Control
 func control($command)
 	Local $loadConf = IniRead($config,"DefaultConfig", $command, "")
-
 	if $loadConf == 1 then
 		$order = 1
 	else
@@ -86,4 +107,6 @@ func control($command)
 	endif
 	return $order
 endfunc
+
+
 
