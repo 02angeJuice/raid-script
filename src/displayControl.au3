@@ -6,7 +6,6 @@ func loadGUI()
 	global $Tab1 = GUICtrlCreateTab(8, 8, 457, 169, $TCS_FIXEDWIDTH)
 	GUICtrlSetFont(-1, 12, 400, 0, "consolas")
 
-
 	;~ TabSheet 1
 	global $TabSheet1 = GUICtrlCreateTabItem("Main")
 	global $startButton = GUICtrlCreateCheckbox("Start", 24, 109, 75, 25, $BS_PUSHLIKE)

@@ -17,10 +17,6 @@
 global $win = WinGetHandle("Seven Knights 2")
 global $config = @ScriptDir & "\config.ini"
 
-;~ global $startConfig = IniRead($config,"DefaultConfig", "start", "")
-;~ global $ticketConfig = IniRead($config,"DefaultConfig", "ticket", "")
-;~ global $retryConfig = IniRead($config,"DefaultConfig", "retry", "")
-
 ;~ Include Files:
 #include <src/pixelPoints.au3>
 #include <src/displayControl.au3>
@@ -28,8 +24,6 @@ global $config = @ScriptDir & "\config.ini"
 
 Opt("MouseCoordMode", 2)
 HotKeySet("{ESC}", "onExit")
-
-
 
 loadGUI()
 loadSettings()
@@ -99,10 +93,7 @@ while 1
 		if $loadRetry == 1 then
 			color($retry, $retryColor, 0, 72, "", 'active retry')
 		endif
-
-
 	endif
-
 wend
 GUIDelete($gMsg)
 

@@ -78,20 +78,13 @@ func onExit()
 	$set = WinGetPos("")
 	IniWrite($config, 'Settings', 'setX', $set[0])
 	IniWrite($config, 'Settings', 'setY', $set[1])
-
-
 	appendLog("set window position [" & $set[0] & ',' & $set[1] & "]" )
-
 	appendLog("app exit")
-	;~ _FileWriteLog(@ScriptDir & "\Example.log", $Edit1)
-
 	MsgBox(0, "Alert", "Exit Macro.", 10)
 	exit
 endfunc
 
 func appendLog($msg)
 	_GUICtrlEdit_AppendText($Edit1, $msg & '' & @CRLF)
-
 	_FileWriteLog(@ScriptDir & "\message.log", $msg)
-	
 endfunc
