@@ -64,7 +64,7 @@ func setWindowSize()
 	WinActivate($win)
 	$pos = WinGetPos($win)
 
-	if $pos then
+	if $pos <> 0 then
 		$newX = (@DesktopWidth - $pos[2]) / 2
 		$newY = (@DesktopHeight - $pos[3]) / 2
 
@@ -86,7 +86,6 @@ func onExit()
 	IniWrite($config, 'Settings', 'setY', $set[1])
 	appendLog("set window position [" & $set[0] & ',' & $set[1] & "]" )
 	appendLog("app exit")
-	MsgBox(0, "Alert", "Exit Macro.", 10)
 	exit
 endfunc
 
