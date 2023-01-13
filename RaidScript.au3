@@ -1,5 +1,5 @@
 #requireAdmin
-#pragma compile(Icon, icon/see.ico)
+#pragma compile(Icon, icon/Irin6_Icon.ico)
 #include <processing.au3>
 #include <WinAPI.au3>
 #include <Array.au3>

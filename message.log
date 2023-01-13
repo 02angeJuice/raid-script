@@ -6,3 +6,9 @@
 2023-01-13 16:51:32 : app pause
 2023-01-13 16:51:38 : set window position [650,215]
 2023-01-13 16:51:38 : app exit
+2023-01-13 16:53:57 : load loadGUI() successful.
+2023-01-13 16:53:57 : load setWindowSize() successful.
+2023-01-13 16:53:57 : set ticket - enable
+2023-01-13 16:53:57 : set retry - enable
+2023-01-13 16:54:02 : set window position [910,261]
+2023-01-13 16:54:02 : app exit
