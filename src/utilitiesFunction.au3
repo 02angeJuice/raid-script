@@ -57,13 +57,14 @@ func color($position, $color, $addX = 0, $addY = 0, $optional = '')
 endfunc
 
 func setWindowSize()
+
+	WinActivate($win)
 	$pos = WinGetPos($win)
-	if $pos then
-		WinMove($win, '', $pos[0], $pos[1], 960, 540)
+	$newX = (@DesktopWidth - $pos[2]) / 2
+	$newY = (@DesktopHeight - $pos[3]) / 2
+
+	if $pos[2] <> 960 and $pos[3] <> 540 then
+		WinMove($win, '', $newX, $newY, 960, 540)
 	endif
 endfunc
 
-func onExit()
-	MsgBox($MB_SYSTEMMODAL, "Alert", "Exit Macro.", 10)
-	exit
-endfunc
