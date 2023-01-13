@@ -14,7 +14,7 @@ func loadGUI()
 	global $exitButton = GUICtrlCreateButton("Exit", 24, 141, 75, 25)
 	GUICtrlSetFont(-1, 13, 800, 0, "consolas")
 	GUICtrlSetColor(-1, 0x99B4D1)
-	global $Edit1 = GUICtrlCreateEdit("", 120, 45, 345, 105)
+	global $Edit1 = GUICtrlCreateEdit("", 115, 45, 345, 120,BitOR($ES_AUTOVSCROLL,$ES_AUTOHSCROLL,$ES_WANTRETURN,$WS_VSCROLL), 0)
 	GUICtrlSetData(-1, '')
 	GUICtrlSetFont(-1, 10, 400, 0, "consolas")
 
@@ -27,9 +27,6 @@ func loadGUI()
 	global $clearButton = GUICtrlCreateButton("Clear", 376, 133, 75, 25)
 	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
 
-	;~ TabSheet 3
-	global $TabSheet3 = GUICtrlCreateTabItem("Help")
-	GUICtrlCreateTabItem("")
 	GUISetState(@SW_SHOW)
 	#EndRegion ### END Koda GUI section ###
 

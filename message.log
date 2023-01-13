@@ -1,14 +1,16 @@
-2023-01-13 16:51:20 : load loadGUI() successful.
-2023-01-13 16:51:21 : load setWindowSize() successful.
-2023-01-13 16:51:21 : set ticket - enable
-2023-01-13 16:51:21 : set retry - enable
-2023-01-13 16:51:30 : app start
-2023-01-13 16:51:32 : app pause
-2023-01-13 16:51:38 : set window position [650,215]
-2023-01-13 16:51:38 : app exit
-2023-01-13 16:53:57 : load loadGUI() successful.
-2023-01-13 16:53:57 : load setWindowSize() successful.
-2023-01-13 16:53:57 : set ticket - enable
-2023-01-13 16:53:57 : set retry - enable
-2023-01-13 16:54:02 : set window position [910,261]
-2023-01-13 16:54:02 : app exit
+2023-01-13 17:31:10 : load loadGUI() successful.
+2023-01-13 17:31:10 : load setWindowSize() failed!
+2023-01-13 17:31:10 : set ticket - enable
+2023-01-13 17:31:10 : set retry - enable
+2023-01-13 17:31:21 : set ticket - disable
+2023-01-13 17:31:21 : set retry - disable
+2023-01-13 17:31:21 : set ticket - enable
+2023-01-13 17:31:22 : set retry - enable
+2023-01-13 17:31:45 : set window position [1173,419]
+2023-01-13 17:31:45 : app exit
+2023-01-13 17:32:11 : load loadGUI() successful.
+2023-01-13 17:32:11 : load setWindowSize() failed!
+2023-01-13 17:32:11 : set ticket - enable
+2023-01-13 17:32:11 : set retry - enable
+2023-01-13 17:32:15 : set window position [1173,419]
+2023-01-13 17:32:15 : app exit
