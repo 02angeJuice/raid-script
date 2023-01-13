@@ -14,3 +14,15 @@
 2023-01-13 17:32:11 : set retry - enable
 2023-01-13 17:32:15 : set window position [1173,419]
 2023-01-13 17:32:15 : app exit
+2023-01-13 17:41:38 : load loadGUI() successful.
+2023-01-13 17:41:38 : load setWindowSize() failed!
+2023-01-13 17:41:38 : set ticket - enable
+2023-01-13 17:41:38 : set retry - enable
+2023-01-13 17:41:50 : set ticket - disable
+2023-01-13 17:41:50 : set retry - disable
+2023-01-13 17:41:52 : set ticket - disable
+2023-01-13 17:41:52 : set retry - disable
+2023-01-13 17:41:52 : set ticket - enable
+2023-01-13 17:41:53 : set retry - enable
+2023-01-13 17:41:54 : set window position [1334,125]
+2023-01-13 17:41:54 : app exit

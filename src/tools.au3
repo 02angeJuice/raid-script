@@ -78,12 +78,6 @@ func setWindowSize()
 		appendLog('load setWindowSize() failed!')
 		ConsoleWrite("load setWindowSize() failed!	<<" & @CRLF)
 	endif
-
-
-
-
-	
-	
 endfunc
 
 func onExit()
