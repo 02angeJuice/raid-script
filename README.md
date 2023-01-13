@@ -1,4 +1,4 @@
-# Seven Knight 2 - RaidScript
+# Seven Knights 2 - RaidScript
 
 [![GitHub](https://img.shields.io/github/downloads/02angeJuice/raid-script/total)](https://github.com/02angeJuice/raid-script/releases)
 [![GitHub](https://img.shields.io/github/v/release/02angeJuice/raid-script)](https://github.com/02angeJuice/raid-script/releases)
