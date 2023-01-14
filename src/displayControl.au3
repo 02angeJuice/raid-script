@@ -1,6 +1,25 @@
+func sizeGUI($set)
+	local $pos[2]
+	local $x = IniRead($config, "Settings", "setX", "")
+	local $y = IniRead($config, "Settings", "setY", "")
+
+	if $x < 0 or $y < 0 then
+		$pos[0] = @DesktopWidth/ 2
+		$pos[1] = @DesktopHeight/2
+	else
+		$pos[0] = $x
+		$pos[1] = $y
+	endif
+	if $set == 'x' then
+		return $pos[0] 
+	else
+		return $pos[1] 
+	endif
+endfunc
+
 func loadGUI()
 	#Region ### START Koda GUI section ### Form=c:\users\b0\desktop\raid_script_gui\raid-script-form.kxf
-	GUICreate("RaidScript", 471, 184, iniread($config, "Settings", "setX", 0), 	iniread($config, "Settings", "setY", 0), $GUI_SS_DEFAULT_GUI)
+	GUICreate("RaidScript", 471, 184, sizeGUI('x'), sizeGUI('y'), $GUI_SS_DEFAULT_GUI)
 
 	GUISetFont(8, 400, 0, "consolas")
 	global $Tab1 = GUICtrlCreateTab(8, 8, 457, 169, $TCS_FIXEDWIDTH)
@@ -8,6 +27,12 @@ func loadGUI()
 
 	;~ TabSheet 1
 	global $TabSheet1 = GUICtrlCreateTabItem("Main")
+	global $windowButton = GUICtrlCreateButton("Window", 24, 45, 75, 25)
+	GUICtrlSetFont(-1, 13, 800, 0, "consolas")
+	GUICtrlSetColor(-1, 0x99B4D1)
+	global $dailyButton = GUICtrlCreateButton("Daily", 24, 77, 75, 25)
+	GUICtrlSetFont(-1, 13, 800, 0, "consolas")
+	GUICtrlSetColor(-1, 0x99B4D1)
 	global $startButton = GUICtrlCreateCheckbox("Start", 24, 109, 75, 25, $BS_PUSHLIKE)
 	GUICtrlSetFont(-1, 13, 800, 0, "consolas")
 	GUICtrlSetColor(-1, 0x99B4D1)

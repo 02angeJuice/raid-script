@@ -69,7 +69,7 @@ func setWindowSize()
 		$newY = (@DesktopHeight - $pos[3]) / 2
 
 		if $pos[2] <> 960 and $pos[3] <> 540 then
-			WinMove($win, '', $newX, $newY, 960, 540)
+			WinMove($win, '', $newX, $newY, 960, 540)		
 		endif
 
 		appendLog('load setWindowSize() successful.')
@@ -78,6 +78,9 @@ func setWindowSize()
 		appendLog('load setWindowSize() failed!')
 		ConsoleWrite("load setWindowSize() failed!	<<" & @CRLF)
 	endif
+
+	$app = WinGetHandle("RaidScript")
+	WinActivate($app)
 endfunc
 
 func onExit()

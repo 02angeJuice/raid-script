@@ -80,6 +80,10 @@ while 1
 			if GUICtrlRead($exitButton) then
 				onExit()
 			endif
+		case $windowButton
+			if GUICtrlRead($windowButton) then
+				setWindowSize()
+			endif
 	endswitch
 
 	if $loadStart == 1 then
