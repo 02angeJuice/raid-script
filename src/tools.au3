@@ -5,11 +5,7 @@ func targetClick($check, $position, $addX, $addY)
 		BlockInput(1)
 		WinActivate($win)
 		click($position[0] + $addX,  $position[1] + $addY)
-		Send("{ALT DOWN}")
-		Sleep(125)
-		Send("{TAB}")
-		Sleep(125)
-		Send("{ALT UP}")
+		;~ altTab()
 		MouseMove($savePos[0], $savePos[1], 1)
 		BlockInput(0)
 	endif
@@ -22,11 +18,7 @@ func targetClickForMember()
 	click(375, 315)
 	click(570, 315)
 	click(765, 315)
-	Send("{ALT DOWN}")
-	Sleep(125)
-	Send("{TAB}")
-	Sleep(125)
-	Send("{ALT UP}")
+	;~ altTab()
 	BlockInput(0)
 endfunc
 
@@ -37,6 +29,14 @@ func click($positionX, $positionY)
 	MouseClick("left")
 	Sleep(125)
 	BlockInput(0)
+endfunc
+
+func altTab()
+	Send("{ALT DOWN}")
+	Sleep(125)
+	Send("{TAB}")
+	Sleep(125)
+	Send("{ALT UP}")
 endfunc
 
 func color($position, $color, $addX = 0, $addY = 0, $optional ="", $msg ='')
@@ -55,6 +55,7 @@ func color($position, $color, $addX = 0, $addY = 0, $optional ="", $msg ='')
 			ConsoleWrite($msg & " '" & $color & "' [" & $position[0] & ',' & $position[1] & ']' & @CRLF)
 			targetClick(1, $position, $addX, $addY)
 		endif
+		return 1
 	else
 		return 0
 	endif
@@ -85,8 +86,8 @@ endfunc
 
 func onExit()
 	$set = WinGetPos("")
-	IniWrite($config, 'Settings', 'setX', $set[0])
-	IniWrite($config, 'Settings', 'setY', $set[1])
+	IniWrite($config, 'Settings', 'gui-x', $set[0])
+	IniWrite($config, 'Settings', 'gui-y', $set[1])
 	appendLog("set window position [" & $set[0] & ',' & $set[1] & "]" )
 	appendLog("app exit")
 	exit

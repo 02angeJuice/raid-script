@@ -29,14 +29,33 @@ loadGUI()
 loadSettings()
 
 while 1
-	$loadStart = control('start')
-	$loadTicket = control('ticket')
-	$loadRetry = control('retry')
+	$dailyCtrl = rConfig('daily', 'Default')
+	$startCtrl = rConfig('start', 'Default')
+	$ticketCtrl = rConfig('ticket', 'Default')
+	$retryCtrl = rConfig('retry', 'Default')
+	
+	;~ Arena
+	$arenaCtrl = rConfig('arena', 'Daily')
+	$arenaNormalCtrl = rConfig('normal', 'Daily')
+	$arenaPrepareCtrl = rConfig('prepare', 'Daily')
+	$arenaAutoCtrl = rConfig('auto', 'Daily')
+	$arenaBattleCtrl = rConfig('battle', 'Daily')
+	$arenaOkCtrl = rConfig('ok', 'Daily')
 
 	$gMsg = GUIGetMsg()
 	switch $gMsg
 		case $GUI_EVENT_CLOSE
 			onExit()
+
+		case $dailyButton
+			switch GUICtrlRead($dailyButton)
+				case $GUI_CHECKED
+					GUICtrlSetData($dailyButton, "Pause")
+					guiEvent('daily', true, 'app daily')
+				case else
+					GUICtrlSetData($dailyButton, "Daily")
+					guiEvent('daily', false, 'app pause')
+			endswitch
 
 		case $startButton
 			switch GUICtrlRead($startButton)
@@ -68,6 +87,16 @@ while 1
 					guiEvent('retry', false, 'set retry - disable')
 			endswitch
 
+		case $arenaCheckbox
+			switch GUICtrlRead($arenaCheckbox)
+				case $GUI_CHECKED
+					GUICtrlSetState($arenaCheckbox, $GUI_CHECKED)
+					guiEvent('arena', true, 'set arena - enable')
+				case else
+					GUICtrlSetState($arenaCheckbox, $GUI_UNCHECKED)
+					guiEvent('arena', false, 'set arena - disable')
+			endswitch
+
 		case $clearButton
 			if GUICtrlRead($clearButton) then
 				GUICtrlSetState($ticketCheckbox, $GUI_UNCHECKED)
@@ -86,18 +115,62 @@ while 1
 			endif
 	endswitch
 
-	if $loadStart == 1 then
+	if $dailyCtrl == 1 then
+		if $arenaCtrl == 1 then
+
+
+			do
+				$arenaCheck = color($arena, $arenaColor, 0, 0, "", 'active arena')
+			until $arenaCheck == 0
+			wConfig('arena', 'Daily', 0)
+			
+
+			do
+				$normalCheck = color($arenaNormal, $arenaNormalColor, 0, 0, "", 'active arena normal')
+			until	$normalCheck == 0
+			wConfig('normal', 'Daily', 0)
+
+			do
+				$prepareCheck = color($arenaPrepare, $arenaPrepareColor, 0, 0, "", 'active arena prepare')
+			until $prepareCheck == 0
+			wConfig('prepare', 'Daily', 0)
+
+			do
+				$autoCheck = color($arenaAuto, $arenaAutoColor, 0, 0, "", 'active arena auto')
+			until $autoCheck == 0
+			wConfig('auto', 'Daily', 0)
+
+
+			do
+				$battleCheck = color($arenaBattle, $arenaBattleColor, 0, 0, "", 'active arena battle')
+			until $battleCheck == 0
+			wConfig('battle', 'Daily', 0)
+
+
+			do
+				$okCheck = color($arenaOk, $arenaOkColor, 0, 0, "", 'active arena ok')
+			until $okCheck == 0
+			wConfig('ok', 'Daily', 0)
+
+
+		endif
+	endif
+
+
+	if $startCtrl == 1 then
 		color($member, $memberColor, 0, 0, 'member', 'active ready')
 		color($start, $startColor, 0, 20, "", 'active start')
 
-		if $loadTicket == 1 then
+		if $ticketCtrl == 1 then
 			color($ticket, $ticketColor, 0, 0, "", 'active ticket')
 		endif
 
-		if $loadRetry == 1 then
+		if $retryCtrl == 1 then
 			color($retry, $retryColor, 0, 72, "", 'active retry')
 		endif
 	endif
+
+
 wend
 GUIDelete($gMsg)
 

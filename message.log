@@ -423,3 +423,788 @@
 2023-01-14 21:29:39 : set retry - enable
 2023-01-14 21:29:46 : set window position [626,178]
 2023-01-14 21:29:46 : app exit
+2023-01-14 21:33:55 : load loadGUI() successful.
+2023-01-14 21:33:56 : load setWindowSize() successful.
+2023-01-14 21:33:56 : set ticket - enable
+2023-01-14 21:33:56 : set retry - enable
+2023-01-14 21:34:16 : set window position [833,192]
+2023-01-14 21:34:16 : app exit
+2023-01-14 21:34:21 : load loadGUI() successful.
+2023-01-14 21:34:21 : load setWindowSize() successful.
+2023-01-14 21:34:21 : set ticket - enable
+2023-01-14 21:34:21 : set retry - enable
+2023-01-14 21:34:26 : load setWindowSize() successful.
+2023-01-14 21:42:59 : set window position [-8,-8]
+2023-01-14 21:42:59 : app exit
+2023-01-14 21:43:03 : load loadGUI() successful.
+2023-01-14 21:43:04 : load setWindowSize() successful.
+2023-01-14 21:43:04 : set ticket - enable
+2023-01-14 21:43:04 : set retry - enable
+2023-01-14 21:43:16 : set window position [1607,353]
+2023-01-14 21:43:17 : app exit
+2023-01-14 21:48:02 : load loadGUI() successful.
+2023-01-14 21:48:03 : load setWindowSize() successful.
+2023-01-14 21:48:03 : set ticket - enable
+2023-01-14 21:48:03 : set retry - enable
+2023-01-14 21:48:35 : set window position [1272,448]
+2023-01-14 21:48:35 : app exit
+2023-01-14 21:49:32 : load loadGUI() successful.
+2023-01-14 21:49:33 : load setWindowSize() successful.
+2023-01-14 21:49:33 : set ticket - enable
+2023-01-14 21:49:33 : set retry - enable
+2023-01-14 21:49:41 : set window position [1550,423]
+2023-01-14 21:49:41 : app exit
+2023-01-14 21:51:08 : load loadGUI() successful.
+2023-01-14 21:51:08 : load setWindowSize() successful.
+2023-01-14 21:51:09 : set ticket - enable
+2023-01-14 21:51:09 : set retry - enable
+2023-01-14 21:54:59 : set window position [1642,369]
+2023-01-14 21:54:59 : app exit
+2023-01-14 21:55:59 : load loadGUI() successful.
+2023-01-14 21:55:59 : load setWindowSize() successful.
+2023-01-14 21:55:59 : set ticket - enable
+2023-01-14 21:55:59 : set retry - enable
+2023-01-14 21:56:56 : set window position [1550,423]
+2023-01-14 21:56:56 : app exit
+2023-01-14 21:58:23 : load loadGUI() successful.
+2023-01-14 21:58:23 : load setWindowSize() successful.
+2023-01-14 21:58:23 : set ticket - enable
+2023-01-14 21:58:23 : set retry - enable
+2023-01-14 21:58:30 : set ticket - disable
+2023-01-14 21:58:30 : set retry - disable
+2023-01-14 21:58:31 : set ticket - enable
+2023-01-14 21:58:32 : set retry - enable
+2023-01-14 21:59:34 : set window position [1550,423]
+2023-01-14 21:59:34 : app exit
+2023-01-14 22:02:29 : load loadGUI() successful.
+2023-01-14 22:02:29 : load setWindowSize() successful.
+2023-01-14 22:02:29 : set ticket - enable
+2023-01-14 22:02:29 : set retry - enable
+2023-01-14 22:02:52 : set window position [1550,423]
+2023-01-14 22:02:52 : app exit
+2023-01-14 22:03:38 : load loadGUI() successful.
+2023-01-14 22:03:39 : load setWindowSize() successful.
+2023-01-14 22:03:39 : set ticket - enable
+2023-01-14 22:03:39 : set retry - enable
+2023-01-14 22:03:49 : set window position [1550,423]
+2023-01-14 22:03:49 : app exit
+2023-01-14 22:05:52 : load loadGUI() successful.
+2023-01-14 22:05:52 : load setWindowSize() successful.
+2023-01-14 22:05:52 : set ticket - enable
+2023-01-14 22:05:52 : set retry - enable
+2023-01-14 22:06:05 : set window position [1411,436]
+2023-01-14 22:06:05 : app exit
+2023-01-14 22:10:13 : load loadGUI() successful.
+2023-01-14 22:10:13 : load setWindowSize() successful.
+2023-01-14 22:10:13 : set ticket - enable
+2023-01-14 22:10:13 : set retry - enable
+2023-01-14 22:10:17 : set arena - enable
+2023-01-14 22:10:18 : set arena - disable
+2023-01-14 22:10:19 : set arena - enable
+2023-01-14 22:10:19 : set arena - disable
+2023-01-14 22:10:20 : set arena - enable
+2023-01-14 22:10:21 : set arena - disable
+2023-01-14 22:10:21 : set arena - enable
+2023-01-14 22:10:23 : set arena - disable
+2023-01-14 22:10:23 : set arena - enable
+2023-01-14 22:10:25 : set arena - disable
+2023-01-14 22:10:26 : set arena - enable
+2023-01-14 22:10:26 : set arena - disable
+2023-01-14 22:10:27 : set arena - enable
+2023-01-14 22:10:27 : set arena - disable
+2023-01-14 22:10:28 : set arena - enable
+2023-01-14 22:10:28 : set arena - disable
+2023-01-14 22:10:29 : set arena - enable
+2023-01-14 22:10:29 : set arena - disable
+2023-01-14 22:10:30 : set arena - enable
+2023-01-14 22:10:31 : set arena - disable
+2023-01-14 22:10:31 : set arena - enable
+2023-01-14 22:10:35 : set arena - disable
+2023-01-14 22:10:36 : set window position [1411,436]
+2023-01-14 22:10:36 : app exit
+2023-01-14 22:24:21 : load loadGUI() successful.
+2023-01-14 22:24:21 : load setWindowSize() successful.
+2023-01-14 22:24:21 : set ticket - enable
+2023-01-14 22:24:38 : set ticket - disable
+2023-01-14 22:24:39 : set ticket - enable
+2023-01-14 22:24:40 : set retry - enable
+2023-01-14 22:24:50 : set arena - enable
+2023-01-14 22:24:51 : set arena - disable
+2023-01-14 22:25:39 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:25:45 : set arena - enable
+2023-01-14 22:25:54 : set arena - disable
+2023-01-14 22:25:56 : set arena - enable
+2023-01-14 22:25:57 : set arena - disable
+2023-01-14 22:25:58 : set arena - enable
+2023-01-14 22:25:59 : set arena - disable
+2023-01-14 22:26:00 : set window position [1411,436]
+2023-01-14 22:26:00 : app exit
+2023-01-14 22:26:30 : load loadGUI() successful.
+2023-01-14 22:26:30 : load setWindowSize() successful.
+2023-01-14 22:26:31 : set ticket - enable
+2023-01-14 22:26:34 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:26:37 : set arena - enable
+2023-01-14 22:26:42 : set arena - disable
+2023-01-14 22:26:42 : set arena - enable
+2023-01-14 22:26:47 : set arena - disable
+2023-01-14 22:26:50 : set arena - enable
+2023-01-14 22:26:50 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:26:53 : set arena - disable
+2023-01-14 22:27:02 : set arena - enable
+2023-01-14 22:27:04 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:27:07 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:27:10 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:27:15 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:27:23 : set ticket - disable
+2023-01-14 22:27:23 : set retry - disable
+2023-01-14 22:27:24 : set ticket - enable
+2023-01-14 22:27:25 : set retry - enable
+2023-01-14 22:27:26 : set arena - disable
+2023-01-14 22:27:27 : set arena - enable
+2023-01-14 22:27:29 : set arena - disable
+2023-01-14 22:27:31 : set arena - enable
+2023-01-14 22:27:37 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:27:42 : set window position [1411,436]
+2023-01-14 22:27:42 : app exit
+2023-01-14 22:28:51 : load loadGUI() successful.
+2023-01-14 22:28:51 : load setWindowSize() successful.
+2023-01-14 22:28:52 : set ticket - enable
+2023-01-14 22:28:52 : set retry - enable
+2023-01-14 22:28:57 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:29:01 : set window position [1411,436]
+2023-01-14 22:29:01 : app exit
+2023-01-14 22:29:42 : load loadGUI() successful.
+2023-01-14 22:29:42 : load setWindowSize() successful.
+2023-01-14 22:29:43 : set ticket - enable
+2023-01-14 22:29:43 : set retry - enable
+2023-01-14 22:29:43 : set arena - enable
+2023-01-14 22:29:44 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:29:48 : set arena - enable
+2023-01-14 22:29:49 : set arena - disable
+2023-01-14 22:29:50 : set arena - enable
+2023-01-14 22:29:51 : set arena - disable
+2023-01-14 22:29:55 : set arena - enable
+2023-01-14 22:29:55 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:29:59 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:30:01 : set arena - disable
+2023-01-14 22:30:09 : set arena - enable
+2023-01-14 22:30:10 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:30:13 : set arena - disable
+2023-01-14 22:30:16 : set window position [1411,436]
+2023-01-14 22:30:16 : app exit
+2023-01-14 22:30:20 : load loadGUI() successful.
+2023-01-14 22:30:21 : load setWindowSize() successful.
+2023-01-14 22:30:21 : set ticket - enable
+2023-01-14 22:30:21 : set retry - enable
+2023-01-14 22:30:28 : set arena - enable
+2023-01-14 22:30:28 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:30:31 : set window position [1411,436]
+2023-01-14 22:30:31 : app exit
+2023-01-14 22:30:37 : load loadGUI() successful.
+2023-01-14 22:30:37 : load setWindowSize() successful.
+2023-01-14 22:30:37 : set ticket - enable
+2023-01-14 22:30:37 : set retry - enable
+2023-01-14 22:30:37 : set arena - enable
+2023-01-14 22:30:42 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:33:28 : set window position [1411,436]
+2023-01-14 22:33:28 : app exit
+2023-01-14 22:33:53 : load loadGUI() successful.
+2023-01-14 22:33:53 : load setWindowSize() successful.
+2023-01-14 22:33:54 : set ticket - enable
+2023-01-14 22:33:54 : set retry - enable
+2023-01-14 22:33:54 : set arena - enable
+2023-01-14 22:33:56 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:34:03 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:34:07 : set arena - disable
+2023-01-14 22:34:26 : set window position [1597,432]
+2023-01-14 22:34:26 : app exit
+2023-01-14 22:34:31 : load loadGUI() successful.
+2023-01-14 22:34:32 : load setWindowSize() successful.
+2023-01-14 22:34:32 : set ticket - enable
+2023-01-14 22:34:32 : set retry - enable
+2023-01-14 22:34:35 : set arena - enable
+2023-01-14 22:34:35 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:34:39 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:34:43 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:34:46 : set arena - disable
+2023-01-14 22:44:22 : set window position [-8,-8]
+2023-01-14 22:44:22 : app exit
+2023-01-14 22:44:38 : load loadGUI() successful.
+2023-01-14 22:44:38 : load setWindowSize() successful.
+2023-01-14 22:44:38 : set ticket - enable
+2023-01-14 22:44:38 : set retry - enable
+2023-01-14 22:44:41 : set arena - enable
+2023-01-14 22:44:41 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 22:44:46 : set arena - disable
+2023-01-14 22:44:53 : set window position [688,412]
+2023-01-14 22:44:53 : app exit
+2023-01-14 22:44:59 : load loadGUI() successful.
+2023-01-14 22:44:59 : load setWindowSize() successful.
+2023-01-14 22:45:00 : set ticket - enable
+2023-01-14 22:45:00 : set retry - enable
+2023-01-14 22:45:02 : set arena - enable
+2023-01-14 22:45:04 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:45:06 : active arena normal '0xF42323' [376,113]
+2023-01-14 22:45:07 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 22:45:08 : active arena auto '0x161920' [600,463]
+2023-01-14 22:45:09 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 22:45:15 : set arena - disable
+2023-01-14 22:47:08 : set window position [1661,172]
+2023-01-14 22:47:08 : app exit
+2023-01-14 22:47:13 : load loadGUI() successful.
+2023-01-14 22:47:14 : load setWindowSize() successful.
+2023-01-14 22:47:14 : set ticket - enable
+2023-01-14 22:47:14 : set retry - enable
+2023-01-14 22:47:16 : set arena - enable
+2023-01-14 22:47:17 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:47:19 : active arena normal '0xF42323' [376,113]
+2023-01-14 22:47:20 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 22:47:21 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 22:47:22 : active arena auto '0x161920' [600,463]
+2023-01-14 22:47:50 : set arena - disable
+2023-01-14 22:48:14 : set arena - enable
+2023-01-14 22:48:15 : set arena - disable
+2023-01-14 22:49:21 : set window position [-8,-8]
+2023-01-14 22:49:21 : app exit
+2023-01-14 22:49:27 : load loadGUI() successful.
+2023-01-14 22:49:27 : load setWindowSize() successful.
+2023-01-14 22:49:28 : set ticket - enable
+2023-01-14 22:49:28 : set retry - enable
+2023-01-14 22:49:40 : set arena - enable
+2023-01-14 22:49:44 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:49:46 : active arena normal '0xF42323' [376,113]
+2023-01-14 22:49:47 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 22:49:49 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 22:49:50 : active arena auto '0x161920' [600,463]
+2023-01-14 22:49:59 : set window position [950,108]
+2023-01-14 22:49:59 : app exit
+2023-01-14 22:52:33 : load loadGUI() successful.
+2023-01-14 22:52:33 : load setWindowSize() successful.
+2023-01-14 22:52:33 : set ticket - enable
+2023-01-14 22:52:33 : set retry - enable
+2023-01-14 22:52:33 : set arena - enable
+2023-01-14 22:52:39 : set arena - disable
+2023-01-14 22:52:40 : set arena - enable
+2023-01-14 22:52:43 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:52:45 : active arena normal '0xF42323' [376,113]
+2023-01-14 22:52:46 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 22:52:47 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 22:53:00 : set window position [1914,340]
+2023-01-14 22:53:00 : app exit
+2023-01-14 22:56:41 : load loadGUI() successful.
+2023-01-14 22:56:42 : load setWindowSize() successful.
+2023-01-14 22:56:42 : set ticket - enable
+2023-01-14 22:56:42 : set retry - enable
+2023-01-14 22:56:42 : set arena - enable
+2023-01-14 22:56:42 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:56:43 : active arena normal '0xF42323' [376,113]
+2023-01-14 22:56:44 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 22:57:08 : set arena - disable
+2023-01-14 22:57:36 : set arena - enable
+2023-01-14 22:57:39 : set arena - disable
+2023-01-14 22:58:08 : set window position [2553,623]
+2023-01-14 22:58:08 : app exit
+2023-01-14 22:58:12 : load loadGUI() successful.
+2023-01-14 22:58:13 : load setWindowSize() successful.
+2023-01-14 22:58:13 : set ticket - enable
+2023-01-14 22:58:13 : set retry - enable
+2023-01-14 22:58:15 : set arena - enable
+2023-01-14 22:58:18 : active arena '0xF21F1F' [138,60]
+2023-01-14 22:58:19 : active arena normal '0xF42323' [376,113]
+2023-01-14 22:58:20 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 22:58:28 : set arena - disable
+2023-01-14 23:02:01 : set window position [2621,625]
+2023-01-14 23:02:01 : app exit
+2023-01-14 23:02:06 : load loadGUI() successful.
+2023-01-14 23:02:07 : load setWindowSize() successful.
+2023-01-14 23:02:07 : set ticket - enable
+2023-01-14 23:02:07 : set retry - enable
+2023-01-14 23:02:12 : set arena - enable
+2023-01-14 23:02:15 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:02:19 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:03:03 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:03:05 : set window position [855,74]
+2023-01-14 23:03:05 : app exit
+2023-01-14 23:04:15 : load loadGUI() successful.
+2023-01-14 23:04:15 : load setWindowSize() successful.
+2023-01-14 23:04:16 : set ticket - enable
+2023-01-14 23:04:16 : set retry - enable
+2023-01-14 23:04:16 : set arena - enable
+2023-01-14 23:04:18 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:04:20 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:04:21 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:04:22 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:04:24 : active arena auto '0x161920' [600,465]
+2023-01-14 23:04:27 : set arena - disable
+2023-01-14 23:08:28 : set window position [-8,-8]
+2023-01-14 23:08:28 : app exit
+2023-01-14 23:09:18 : load loadGUI() successful.
+2023-01-14 23:09:18 : load setWindowSize() successful.
+2023-01-14 23:09:19 : set ticket - enable
+2023-01-14 23:09:19 : set retry - enable
+2023-01-14 23:09:22 : set arena - enable
+2023-01-14 23:09:25 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:09:26 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:09:27 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:10:08 : set arena - disable
+2023-01-14 23:10:08 : set window position [1298,649]
+2023-01-14 23:10:08 : app exit
+2023-01-14 23:10:13 : load loadGUI() successful.
+2023-01-14 23:10:13 : load setWindowSize() successful.
+2023-01-14 23:10:14 : set ticket - enable
+2023-01-14 23:10:14 : set retry - enable
+2023-01-14 23:10:16 : set arena - enable
+2023-01-14 23:10:17 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:10:19 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:10:20 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:10:24 : set window position [1298,649]
+2023-01-14 23:10:24 : app exit
+2023-01-14 23:10:44 : load loadGUI() successful.
+2023-01-14 23:10:44 : load setWindowSize() successful.
+2023-01-14 23:10:44 : set ticket - enable
+2023-01-14 23:10:44 : set retry - enable
+2023-01-14 23:10:44 : set arena - enable
+2023-01-14 23:10:44 : active arena auto '0x161920' [600,465]
+2023-01-14 23:10:45 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:10:46 : active arena ok '0x5C79D2' [571,324]
+2023-01-14 23:11:07 : set arena - disable
+2023-01-14 23:12:10 : set window position [2553,623]
+2023-01-14 23:12:10 : app exit
+2023-01-14 23:12:14 : load loadGUI() successful.
+2023-01-14 23:12:14 : load setWindowSize() successful.
+2023-01-14 23:12:14 : set ticket - enable
+2023-01-14 23:12:14 : set retry - enable
+2023-01-14 23:12:18 : set arena - enable
+2023-01-14 23:12:18 : set arena - disable
+2023-01-14 23:12:19 : set arena - enable
+2023-01-14 23:12:21 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:12:22 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:12:23 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:12:25 : active arena auto '0x161920' [600,465]
+2023-01-14 23:12:25 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:12:26 : active arena ok '0x5C79D2' [571,324]
+2023-01-14 23:12:28 : set window position [1822,711]
+2023-01-14 23:12:28 : app exit
+2023-01-14 23:13:09 : load loadGUI() successful.
+2023-01-14 23:13:09 : load setWindowSize() successful.
+2023-01-14 23:13:10 : set ticket - enable
+2023-01-14 23:13:10 : set retry - enable
+2023-01-14 23:13:10 : set arena - enable
+2023-01-14 23:13:14 : set arena - disable
+2023-01-14 23:14:37 : set arena - enable
+2023-01-14 23:14:41 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:14:43 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:14:44 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:14:45 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:14:50 : set window position [665,233]
+2023-01-14 23:14:50 : app exit
+2023-01-14 23:17:34 : load loadGUI() successful.
+2023-01-14 23:17:35 : load setWindowSize() successful.
+2023-01-14 23:17:35 : set ticket - enable
+2023-01-14 23:17:35 : set retry - enable
+2023-01-14 23:17:35 : set arena - enable
+2023-01-14 23:17:36 : set arena - disable
+2023-01-14 23:17:37 : set arena - enable
+2023-01-14 23:17:38 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:17:40 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:17:41 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:17:43 : active arena auto '0x161920' [600,465]
+2023-01-14 23:17:43 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:17:44 : active arena ok '0x5C79D2' [571,324]
+2023-01-14 23:17:45 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:20:41 : set window position [863,96]
+2023-01-14 23:20:41 : app exit
+2023-01-14 23:20:48 : load loadGUI() successful.
+2023-01-14 23:20:48 : load setWindowSize() successful.
+2023-01-14 23:20:48 : set ticket - enable
+2023-01-14 23:20:48 : set retry - enable
+2023-01-14 23:20:48 : set arena - enable
+2023-01-14 23:20:48 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:20:49 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:20:51 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:20:52 : active arena auto '0x161920' [600,465]
+2023-01-14 23:20:53 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:21:33 : set window position [863,96]
+2023-01-14 23:21:33 : app exit
+2023-01-14 23:21:38 : load loadGUI() successful.
+2023-01-14 23:21:38 : load setWindowSize() successful.
+2023-01-14 23:21:38 : set ticket - enable
+2023-01-14 23:21:38 : set retry - enable
+2023-01-14 23:21:38 : set arena - enable
+2023-01-14 23:21:45 : set arena - disable
+2023-01-14 23:21:46 : set arena - enable
+2023-01-14 23:21:47 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:21:48 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:21:50 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:21:51 : active arena auto '0x161920' [600,465]
+2023-01-14 23:21:52 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:23:12 : set window position [-8,-8]
+2023-01-14 23:23:12 : app exit
+2023-01-14 23:23:33 : load loadGUI() successful.
+2023-01-14 23:23:33 : load setWindowSize() successful.
+2023-01-14 23:23:33 : set ticket - enable
+2023-01-14 23:23:33 : set retry - enable
+2023-01-14 23:23:33 : set arena - enable
+2023-01-14 23:23:35 : set arena - disable
+2023-01-14 23:23:36 : set arena - enable
+2023-01-14 23:23:37 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:23:38 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:23:40 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:23:41 : active arena auto '0x161920' [600,465]
+2023-01-14 23:23:42 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:23:43 : active arena ok '0x5C79D2' [571,324]
+2023-01-14 23:23:44 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:25:35 : set window position [910,732]
+2023-01-14 23:25:35 : app exit
+2023-01-14 23:25:41 : load loadGUI() successful.
+2023-01-14 23:25:42 : load setWindowSize() successful.
+2023-01-14 23:25:42 : set ticket - enable
+2023-01-14 23:25:42 : set retry - enable
+2023-01-14 23:25:42 : set arena - enable
+2023-01-14 23:25:45 : set arena - disable
+2023-01-14 23:25:46 : set arena - enable
+2023-01-14 23:25:50 : set arena - disable
+2023-01-14 23:25:51 : set arena - enable
+2023-01-14 23:25:53 : active arena '0xF21F1F' [138,60]
+2023-01-14 23:25:54 : active arena normal '0xF42323' [376,113]
+2023-01-14 23:25:55 : active arena prepare '0xDB2F30' [926,440]
+2023-01-14 23:25:57 : active arena auto '0x161920' [600,465]
+2023-01-14 23:25:58 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:25:59 : active arena ok '0x5C79D2' [571,324]
+2023-01-14 23:26:00 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:27:47 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:27:47 : active arena battle '0xE92E2E' [927,440]
+2023-01-14 23:27:58 : set window position [1452,247]
+2023-01-14 23:27:58 : app exit
+2023-01-14 23:29:28 : load loadGUI() successful.
+2023-01-14 23:29:28 : load setWindowSize() successful.
+2023-01-14 23:29:28 : set ticket - enable
+2023-01-14 23:29:28 : set retry - enable
+2023-01-14 23:29:31 : load setWindowSize() successful.
+2023-01-14 23:29:35 : set ticket - disable
+2023-01-14 23:29:36 : set ticket - enable
+2023-01-14 23:29:37 : set ticket - disable
+2023-01-14 23:29:37 : set retry - disable
+2023-01-14 23:29:38 : set retry - enable
+2023-01-14 23:29:38 : set ticket - enable
+2023-01-14 23:29:42 : set window position [1524,291]
+2023-01-14 23:29:42 : app exit
+2023-01-14 23:36:00 : load loadGUI() successful.
+2023-01-14 23:36:00 : load setWindowSize() successful.
+2023-01-14 23:36:01 : set ticket - enable
+2023-01-14 23:36:01 : set retry - enable
+2023-01-14 23:36:05 : set window position [1614,718]
+2023-01-14 23:36:05 : app exit
+2023-01-14 23:36:38 : load loadGUI() successful.
+2023-01-14 23:36:39 : load setWindowSize() successful.
+2023-01-14 23:36:39 : set ticket - enable
+2023-01-14 23:36:39 : set retry - enable
+2023-01-14 23:36:41 : set window position [1488,430]
+2023-01-14 23:36:41 : app exit
+2023-01-14 23:38:10 : load loadGUI() successful.
+2023-01-14 23:38:10 : load setWindowSize() successful.
+2023-01-14 23:38:10 : set ticket - enable
+2023-01-14 23:38:10 : set retry - enable
+2023-01-14 23:38:36 : set arena - enable
+2023-01-14 23:38:37 : set arena - disable
+2023-01-14 23:39:11 : load setWindowSize() successful.
+2023-01-14 23:39:12 : load setWindowSize() successful.
+2023-01-14 23:39:24 : load setWindowSize() successful.
+2023-01-14 23:40:10 : app start
+2023-01-14 23:40:12 : app pause
+2023-01-14 23:42:03 : set ticket - disable
+2023-01-14 23:42:03 : set retry - disable
+2023-01-14 23:42:04 : set ticket - enable
+2023-01-14 23:42:05 : set retry - enable
+2023-01-14 23:42:26 : set window position [1641,389]
+2023-01-14 23:42:26 : app exit
+2023-01-14 23:42:32 : load loadGUI() successful.
+2023-01-14 23:42:32 : load setWindowSize() successful.
+2023-01-14 23:42:33 : set ticket - enable
+2023-01-14 23:42:33 : set retry - enable
+2023-01-14 23:46:20 : set arena - enable
+2023-01-14 23:46:20 : set arena - disable
+2023-01-14 23:46:25 : set ticket - disable
+2023-01-14 23:46:26 : set ticket - enable
+2023-01-14 23:46:27 : set retry - disable
+2023-01-14 23:46:28 : set retry - enable
+2023-01-14 23:46:29 : set arena - enable
+2023-01-14 23:46:30 : set arena - disable
+2023-01-14 23:46:38 : app start
+2023-01-14 23:46:39 : app pause
+2023-01-14 23:46:40 : app start
+2023-01-14 23:46:41 : app pause
+2023-01-14 23:46:42 : app start
+2023-01-14 23:46:42 : app pause
+2023-01-14 23:46:45 : load setWindowSize() successful.
+2023-01-14 23:46:46 : load setWindowSize() successful.
+2023-01-14 23:46:47 : load setWindowSize() successful.
+2023-01-14 23:46:48 : load setWindowSize() successful.
+2023-01-14 23:47:02 : load setWindowSize() successful.
+2023-01-14 23:47:30 : set window position [1731,526]
+2023-01-14 23:47:30 : app exit
+2023-01-14 23:55:56 : load loadGUI() successful.
+2023-01-14 23:55:56 : load setWindowSize() failed!
+2023-01-14 23:55:57 : set ticket - enable
+2023-01-14 23:55:57 : set retry - enable
+2023-01-14 23:56:00 : set window position [1086,307]
+2023-01-14 23:56:00 : app exit
+2023-01-14 23:56:03 : load loadGUI() successful.
+2023-01-14 23:56:03 : load setWindowSize() failed!
+2023-01-14 23:56:03 : set ticket - enable
+2023-01-14 23:56:03 : set retry - enable
+2023-01-14 23:56:09 : set window position [1647,496]
+2023-01-14 23:56:09 : app exit
+2023-01-15 00:06:32 : load loadGUI() successful.
+2023-01-15 00:06:32 : load setWindowSize() failed!
+2023-01-15 00:06:32 : set ticket - enable
+2023-01-15 00:06:32 : set retry - enable
+2023-01-15 00:06:36 : app start
+2023-01-15 00:06:37 : app pause
+2023-01-15 00:06:38 : load setWindowSize() failed!
+2023-01-15 00:06:39 : load setWindowSize() failed!
+2023-01-15 00:06:41 : load setWindowSize() failed!
+2023-01-15 00:06:41 : load setWindowSize() failed!
+2023-01-15 00:06:50 : set window position [1444,303]
+2023-01-15 00:06:50 : app exit
+2023-01-15 00:07:27 : load loadGUI() successful.
+2023-01-15 00:07:27 : load setWindowSize() successful.
+2023-01-15 00:07:28 : set ticket - enable
+2023-01-15 00:07:28 : set retry - enable
+2023-01-15 00:07:29 : set window position [1647,496]
+2023-01-15 00:07:29 : app exit
+2023-01-15 15:28:59 : load loadGUI() successful.
+2023-01-15 15:28:59 : load setWindowSize() successful.
+2023-01-15 15:28:59 : set ticket - enable
+2023-01-15 15:28:59 : set retry - enable
+2023-01-15 15:29:36 : set window position [1625,391]
+2023-01-15 15:29:36 : app exit
+2023-01-15 15:36:28 : load loadGUI() successful.
+2023-01-15 15:36:28 : load setWindowSize() successful.
+2023-01-15 15:36:29 : set ticket - enable
+2023-01-15 15:36:29 : set retry - enable
+2023-01-15 15:36:31 : set arena - enable
+2023-01-15 15:36:34 : app daily
+2023-01-15 15:36:45 : app pause
+2023-01-15 15:36:45 : app daily
+2023-01-15 15:36:46 : app pause
+2023-01-15 15:36:46 : app daily
+2023-01-15 15:36:47 : app pause
+2023-01-15 15:36:50 : set window position [1519,323]
+2023-01-15 15:36:50 : app exit
+2023-01-15 15:38:31 : load loadGUI() successful.
+2023-01-15 15:38:31 : load setWindowSize() successful.
+2023-01-15 15:38:31 : set ticket - enable
+2023-01-15 15:38:31 : set retry - enable
+2023-01-15 15:38:31 : set arena - enable
+2023-01-15 15:38:34 : set arena - disable
+2023-01-15 15:38:35 : app daily
+2023-01-15 15:38:37 : app pause
+2023-01-15 15:38:37 : app daily
+2023-01-15 15:38:40 : app pause
+2023-01-15 15:38:41 : app start
+2023-01-15 15:38:41 : app pause
+2023-01-15 15:38:42 : app daily
+2023-01-15 15:38:42 : app start
+2023-01-15 15:38:42 : app pause
+2023-01-15 15:38:43 : app pause
+2023-01-15 15:38:44 : app daily
+2023-01-15 15:38:44 : app pause
+2023-01-15 15:38:46 : app daily
+2023-01-15 15:38:47 : app pause
+2023-01-15 15:38:48 : app daily
+2023-01-15 15:38:48 : app pause
+2023-01-15 15:38:49 : app daily
+2023-01-15 15:38:50 : app pause
+2023-01-15 15:38:51 : set arena - enable
+2023-01-15 15:38:52 : app daily
+2023-01-15 15:38:52 : active arena '0xF21F1F' [138,60]
+2023-01-15 15:38:53 : active arena normal '0xF42323' [376,113]
+2023-01-15 15:38:55 : active arena prepare '0xDB2F30' [926,440]
+2023-01-15 15:38:56 : active arena auto '0x161920' [600,465]
+2023-01-15 15:38:57 : active arena battle '0xE92E2E' [927,440]
+2023-01-15 15:38:58 : active arena ok '0x5C79D2' [571,324]
+2023-01-15 15:38:59 : active arena battle '0xE92E2E' [927,440]
+2023-01-15 15:39:24 : set window position [1519,323]
+2023-01-15 15:39:24 : app exit
+2023-01-15 15:40:10 : load loadGUI() successful.
+2023-01-15 15:40:11 : load setWindowSize() successful.
+2023-01-15 15:40:11 : set ticket - enable
+2023-01-15 15:40:11 : set retry - enable
+2023-01-15 15:40:14 : set arena - enable
+2023-01-15 15:40:15 : set arena - disable
+2023-01-15 15:40:16 : app start
+2023-01-15 15:40:17 : app pause
+2023-01-15 15:40:20 : app start
+2023-01-15 15:40:20 : app pause
+2023-01-15 15:40:24 : set arena - enable
+2023-01-15 15:40:24 : set arena - disable
+2023-01-15 15:40:25 : set arena - enable
+2023-01-15 15:40:25 : set arena - disable
+2023-01-15 15:40:26 : set ticket - disable
+2023-01-15 15:40:26 : set retry - disable
+2023-01-15 15:40:27 : set retry - enable
+2023-01-15 15:40:27 : set ticket - enable
+2023-01-15 15:40:44 : load setWindowSize() successful.
+2023-01-15 15:40:48 : load setWindowSize() successful.
+2023-01-15 15:59:49 : set window position [2667,460]
+2023-01-15 15:59:49 : app exit
+2023-01-15 15:59:53 : load loadGUI() successful.
+2023-01-15 15:59:53 : load setWindowSize() successful.
+2023-01-15 15:59:54 : set ticket - enable
+2023-01-15 15:59:54 : set retry - enable
+2023-01-15 15:59:57 : set arena - enable
+2023-01-15 15:59:58 : app daily
+2023-01-15 16:00:00 : active arena '0xF21F1F' [138,60]
+2023-01-15 16:00:01 : active arena normal '0xF42323' [376,113]
+2023-01-15 16:00:03 : active arena prepare '0xDB2F30' [926,440]
+2023-01-15 16:00:05 : active arena auto '0x161920' [600,465]
+2023-01-15 16:00:29 : set window position [1597,538]
+2023-01-15 16:00:29 : app exit
+2023-01-15 16:01:20 : load loadGUI() successful.
+2023-01-15 16:01:21 : load setWindowSize() successful.
+2023-01-15 16:01:21 : set ticket - enable
+2023-01-15 16:01:21 : set retry - enable
+2023-01-15 16:01:21 : set arena - enable
+2023-01-15 16:01:28 : app daily
+2023-01-15 16:01:30 : active arena '0xF21F1F' [138,60]
+2023-01-15 16:01:31 : active arena normal '0xF42323' [376,113]
+2023-01-15 16:01:33 : active arena prepare '0xDB2F30' [926,440]
+2023-01-15 16:01:34 : active arena auto '0x161920' [600,465]
+2023-01-15 16:01:42 : set window position [746,246]
+2023-01-15 16:01:42 : app exit
+2023-01-15 16:08:24 : load loadGUI() successful.
+2023-01-15 16:08:25 : load setWindowSize() successful.
+2023-01-15 16:08:25 : set ticket - enable
+2023-01-15 16:08:25 : set retry - enable
+2023-01-15 16:08:25 : set arena - enable
+2023-01-15 16:08:28 : set arena - disable
+2023-01-15 16:08:29 : set arena - enable
+2023-01-15 16:08:30 : app daily
+2023-01-15 16:08:31 : active arena '0xF21F1F' [138,60]
+2023-01-15 16:08:33 : active arena normal '0xF42323' [376,113]
+2023-01-15 16:08:34 : active arena prepare '0xDB2F30' [926,440]
+2023-01-15 16:08:36 : active arena auto '0x161920' [600,465]
+2023-01-15 16:08:37 : active arena battle '0xE92E2E' [927,440]
+2023-01-15 16:08:37 : active arena ok '0x5C79D2' [571,324]
+2023-01-15 16:08:38 : active arena battle '0xE92E2E' [927,440]
+2023-01-15 16:08:42 : app pause
+2023-01-15 16:08:43 : set arena - disable
+2023-01-15 16:08:44 : set arena - enable
+2023-01-15 16:08:45 : app daily
+2023-01-15 16:09:31 : app pause
+2023-01-15 16:09:32 : app daily
+2023-01-15 16:09:46 : active arena '0xF21F1F' [138,60]
+2023-01-15 16:09:48 : active arena normal '0xF42323' [376,113]
+2023-01-15 16:09:49 : active arena prepare '0xDB2F30' [926,440]
+2023-01-15 16:09:50 : active arena prepare '0xDB2F30' [926,440]
+2023-01-15 16:10:05 : app pause
+2023-01-15 16:39:57 : set window position [-8,-8]
+2023-01-15 16:39:57 : app exit
+2023-01-15 16:40:01 : load loadGUI() successful.
+2023-01-15 16:40:02 : load setWindowSize() successful.
+2023-01-15 16:40:02 : set ticket - enable
+2023-01-15 16:40:02 : set retry - enable
+2023-01-15 16:40:05 : set arena - enable
+2023-01-15 16:40:07 : app daily
+2023-01-15 16:40:07 : app pause
+2023-01-15 16:40:09 : app daily
+2023-01-15 16:40:16 : app pause
+2023-01-15 16:40:16 : app daily
+2023-01-15 16:40:18 : set arena - disable
+2023-01-15 16:40:18 : set arena - enable
+2023-01-15 16:40:26 : set arena - disable
+2023-01-15 16:40:26 : set arena - enable
+2023-01-15 16:41:10 : set arena - disable
+2023-01-15 16:41:11 : set arena - enable
+2023-01-15 16:41:11 : set arena - disable
+2023-01-15 16:41:13 : app pause
+2023-01-15 16:41:14 : app daily
+2023-01-15 16:41:29 : set window position [853,726]
+2023-01-15 16:41:29 : app exit
+2023-01-15 16:41:33 : load loadGUI() successful.
+2023-01-15 16:41:33 : load setWindowSize() successful.
+2023-01-15 16:41:33 : set ticket - enable
+2023-01-15 16:41:33 : set retry - enable
+2023-01-15 16:41:36 : set arena - enable
+2023-01-15 16:41:37 : set arena - disable
+2023-01-15 16:41:39 : set arena - enable
+2023-01-15 16:41:40 : set arena - disable
+2023-01-15 16:41:40 : set arena - enable
+2023-01-15 16:41:41 : set arena - disable
+2023-01-15 16:41:42 : set window position [1431,365]
+2023-01-15 16:41:42 : app exit
+2023-01-15 16:41:50 : load loadGUI() successful.
+2023-01-15 16:41:50 : load setWindowSize() successful.
+2023-01-15 16:41:50 : set ticket - enable
+2023-01-15 16:41:50 : set retry - enable
+2023-01-15 16:41:52 : set arena - enable
+2023-01-15 16:41:53 : set arena - disable
+2023-01-15 16:41:54 : set arena - enable
+2023-01-15 16:41:54 : set arena - disable
+2023-01-15 16:41:56 : set window position [1490,492]
+2023-01-15 16:41:56 : app exit
+2023-01-15 16:42:58 : load loadGUI() successful.
+2023-01-15 16:42:59 : load setWindowSize() successful.
+2023-01-15 16:42:59 : set ticket - enable
+2023-01-15 16:42:59 : set retry - enable
+2023-01-15 16:42:59 : set arena - enable
+2023-01-15 16:43:01 : set arena - disable
+2023-01-15 16:43:02 : set arena - enable
+2023-01-15 16:43:03 : set arena - disable
+2023-01-15 16:43:03 : set arena - enable
+2023-01-15 16:43:04 : set window position [1490,492]
+2023-01-15 16:43:04 : app exit
+2023-01-15 16:46:27 : load loadGUI() successful.
+2023-01-15 16:46:27 : load setWindowSize() successful.
+2023-01-15 16:46:27 : set ticket - enable
+2023-01-15 16:46:27 : set retry - enable
+2023-01-15 16:46:29 : set arena - enable
+2023-01-15 16:46:31 : set arena - disable
+2023-01-15 16:46:31 : set arena - enable
+2023-01-15 16:46:32 : set arena - disable
+2023-01-15 16:46:32 : set arena - enable
+2023-01-15 16:46:33 : set arena - disable
+2023-01-15 16:46:33 : set arena - enable
+2023-01-15 16:46:34 : set arena - disable
+2023-01-15 16:46:34 : set arena - enable
+2023-01-15 16:46:35 : set arena - disable
+2023-01-15 16:46:35 : set arena - enable
+2023-01-15 16:46:40 : set window position [1490,492]
+2023-01-15 16:46:40 : app exit
+2023-01-15 16:47:10 : load loadGUI() successful.
+2023-01-15 16:47:10 : load setWindowSize() successful.
+2023-01-15 16:47:10 : set ticket - enable
+2023-01-15 16:47:10 : set retry - enable
+2023-01-15 16:47:11 : set arena - enable
+2023-01-15 16:47:12 : set arena - disable
+2023-01-15 16:47:12 : set arena - enable
+2023-01-15 16:47:13 : set arena - disable
+2023-01-15 16:47:13 : set arena - enable
+2023-01-15 16:47:19 : app daily
+2023-01-15 16:47:19 : active arena '0xF21F1F' [138,60]
+2023-01-15 16:47:47 : set window position [461,410]
+2023-01-15 16:47:47 : app exit
+2023-01-15 16:48:01 : load loadGUI() successful.
+2023-01-15 16:48:01 : load setWindowSize() successful.
+2023-01-15 16:48:01 : set ticket - enable
+2023-01-15 16:48:01 : set retry - enable
+2023-01-15 16:48:05 : set arena - enable
+2023-01-15 16:48:08 : app daily
+2023-01-15 16:48:08 : active arena '0xF21F1F' [138,60]
+2023-01-15 16:48:18 : set window position [1190,154]
+2023-01-15 16:48:18 : app exit
+2023-01-15 17:08:17 : load loadGUI() successful.
+2023-01-15 17:08:17 : load setWindowSize() successful.
+2023-01-15 17:08:17 : set ticket - enable
+2023-01-15 17:08:17 : set retry - enable
+2023-01-15 17:08:31 : app daily
+2023-01-15 17:08:31 : app pause
+2023-01-15 17:08:32 : app daily
+2023-01-15 17:08:33 : app pause
+2023-01-15 17:08:59 : set arena - enable
+2023-01-15 17:09:00 : set arena - disable
+2023-01-15 17:09:02 : set arena - enable
+2023-01-15 17:09:03 : set arena - disable
+2023-01-15 17:09:12 : set window position [1789,160]
+2023-01-15 17:09:12 : app exit
