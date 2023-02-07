@@ -69,7 +69,7 @@ func setWindowSize()
 		$newX = (@DesktopWidth - $pos[2]) / 2
 		$newY = (@DesktopHeight - $pos[3]) / 2
 
-		if $pos[2] <> 960 and $pos[3] <> 540 then
+		if $pos[2] <> 960 or $pos[3] <> 540 then
 			WinMove($win, '', $newX, $newY, 960, 540)		
 		endif
 

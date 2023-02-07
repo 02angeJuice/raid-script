@@ -30,9 +30,9 @@ func loadGUI()
 	global $windowButton = GUICtrlCreateButton("Window", 24, 45, 75, 25)
 	GUICtrlSetFont(-1, 13, 800, 0, "consolas")
 	GUICtrlSetColor(-1, 0x99B4D1)
-	global $dailyButton = GUICtrlCreateCheckbox("Daily", 24, 77, 75, 25, $BS_PUSHLIKE)
-	GUICtrlSetFont(-1, 13, 800, 0, "consolas")
-	GUICtrlSetColor(-1, 0x99B4D1)
+	;~ global $dailyButton = GUICtrlCreateCheckbox("Daily", 24, 77, 75, 25, $BS_PUSHLIKE)
+	;~ GUICtrlSetFont(-1, 13, 800, 0, "consolas")
+	;~ GUICtrlSetColor(-1, 0x99B4D1)
 	global $startButton = GUICtrlCreateCheckbox("Start", 24, 109, 75, 25, $BS_PUSHLIKE)
 	GUICtrlSetFont(-1, 13, 800, 0, "consolas")
 	GUICtrlSetColor(-1, 0x99B4D1)
@@ -52,16 +52,16 @@ func loadGUI()
 	global $clearButton = GUICtrlCreateButton("Clear", 376, 133, 75, 25)
 	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
 
-	global $arenaCheckbox = GUICtrlCreateCheckbox("Arena", 184, 53, 97, 25)
-	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
-	$shopCheckbox = GUICtrlCreateCheckbox("Shop", 184, 80, 97, 25)
-	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
-	$towerCheckbox = GUICtrlCreateCheckbox("Tower", 184, 108, 97, 25)
-	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
-	$guildCheckbox = GUICtrlCreateCheckbox("Guild", 288, 53, 97, 25)
-	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
-	$friendsCheckbox = GUICtrlCreateCheckbox("Friends", 288, 80, 97, 25)
-	GUICtrlSetFont(-1, 13, 400, 0, "consolas")
+	;~ global $arenaCheckbox = GUICtrlCreateCheckbox("Arena", 184, 53, 97, 25)
+	;~ GUICtrlSetFont(-1, 13, 400, 0, "consolas")
+	;~ $shopCheckbox = GUICtrlCreateCheckbox("Shop", 184, 80, 97, 25)
+	;~ GUICtrlSetFont(-1, 13, 400, 0, "consolas")
+	;~ $towerCheckbox = GUICtrlCreateCheckbox("Tower", 184, 108, 97, 25)
+	;~ GUICtrlSetFont(-1, 13, 400, 0, "consolas")
+	;~ $guildCheckbox = GUICtrlCreateCheckbox("Guild", 288, 53, 97, 25)
+	;~ GUICtrlSetFont(-1, 13, 400, 0, "consolas")
+	;~ $friendsCheckbox = GUICtrlCreateCheckbox("Friends", 288, 80, 97, 25)
+	;~ GUICtrlSetFont(-1, 13, 400, 0, "consolas")
 
 	GUISetState(@SW_SHOW)
 	#EndRegion ### END Koda GUI section ###
@@ -73,15 +73,10 @@ endfunc
 func loadSettings()
 	setWindowSize()
 
-	local $dailySetting = rConfig('daily', 'Default')
 	local $startSetting = rConfig('start', 'Default')
 	local $ticketSetting = rConfig('ticket', 'Default')
 	local $retrySetting = rConfig('retry', 'Default')
-	local $arenaSetting = rConfig('arena', 'DailyArena')
-	
-	if $dailySetting == 1 then
-		IniWrite($config, "Default", "daily", 0)
-	endif
+
 	if $startSetting == 1 then
 		IniWrite($config, "Default", "start", 0)
 	endif
@@ -96,11 +91,6 @@ func loadSettings()
 		ConsoleWrite("set retry - enable" & @CRLF)
 	endif
 
-	if $arenaSetting == 1 then
-		GUICtrlSetState($arenaCheckbox, $GUI_CHECKED)
-		appendLog('set arena - enable')
-		ConsoleWrite("set arena - enable" & @CRLF)
-	endif
 endfunc
 
 func guiEvent($msg, $boolean, $message='')
