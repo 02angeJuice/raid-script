@@ -5,6 +5,7 @@
 #include <Date.au3>
 #include <Array.au3>
 #include <GUIConstantsEx.au3>
+#include <src/pixelPoints.au3>
 
 global $gName = 'Seven Knights 2'
 global $hWND = WinGetHandle($gName)
@@ -15,8 +16,6 @@ global $count = 0
 global $arrPlay[4] = ['🟡 🔹 🔹', '🔹 🟡 🔹', '🔹 🔹 🟡', '🔹 🔹 🔹']
 global $arrIdle[3] = ['🟡  HOME : play & pause ', '🟡  END : exit ', '🟡  F5 : resize window ']
 
-#include <src/pixelPoints.au3>
-
 Opt("MouseCoordMode", 2)
 HotKeySet("{END}", "onExit")
 HotKeySet("{HOME}", "onGo")
@@ -24,33 +23,8 @@ HotKeySet("{F5}", "setWindowSize")
 
 setWindowSize()
 $gTimer = TimerInit()
-AdlibRegister("titleUpdate", 250)
 
-while 1
-wend
-
-func onGo()
-	$paused = not $paused
-	if $paused == true then
-		setWindowSize()
-		WinSetTitle($hWND, "", $gName&' '&'🔅 on')
-		$isGoing = true
-		AdlibRegister("findColors", 250)
-	else
-		WinSetTitle($hWND, "", $gName&' '&'🔅 off')
-		$isGoing = false
-		AdlibUnRegister("findColors")
-	endif
-endfunc
-
-func findColors()
-	color($member, $memberColor, 0, 0, 'member', 'active ready')
-	color($start, $startColor, 0, 20, "", 'active start')
-	color($ticket, $ticketColor, 0, 0, "", 'active ticket')
-	color($retry, $retryColor, 0, 72, "", 'active retry')
-endfunc
-
-func titleUpdate()
+while Sleep(250)
 	_TicksToTime(Int(TimerDiff($gTimer)), $gHour, $gMin, $gSec)
 	local $sTime = $gTime
 	local $gTime = timeFormat($gHour, $gMin, $gSec)
@@ -74,6 +48,27 @@ func titleUpdate()
 
 		endif
 	endif
+wend
+
+func onGo()
+	$paused = not $paused
+	if $paused == true then
+		setWindowSize()
+		WinSetTitle($hWND, "", $gName&' '&'🔅 on')
+		$isGoing = true
+		AdlibRegister("findColors", 250)
+	else
+		WinSetTitle($hWND, "", $gName&' '&'🔅 off')
+		$isGoing = false
+		AdlibUnRegister("findColors")
+	endif
+endfunc
+
+func findColors()
+	color($member, $memberColor, 0, 0, 'member', 'active ready')
+	color($start, $startColor, 0, 20, "", 'active start')
+	color($ticket, $ticketColor, 0, 0, "", 'active ticket')
+	color($retry, $retryColor, 0, 72, "", 'active retry')
 endfunc
 
 func timeFormat($h, $m, $s)
