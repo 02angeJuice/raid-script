@@ -5,7 +5,7 @@ func targetClick($check, $position, $addX, $addY)
 		BlockInput(1)
 		WinActivate($win)
 		click($position[0] + $addX,  $position[1] + $addY)
-		;~ altTab()
+		altTab()
 		MouseMove($savePos[0], $savePos[1], 1)
 		BlockInput(0)
 	endif
@@ -18,7 +18,7 @@ func targetClickForMember()
 	click(375, 315)
 	click(570, 315)
 	click(765, 315)
-	;~ altTab()
+	altTab()
 	BlockInput(0)
 endfunc
 

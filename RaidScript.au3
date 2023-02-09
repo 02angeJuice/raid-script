@@ -34,14 +34,6 @@ while 1
 	$ticketCtrl = rConfig('ticket', 'Default')
 	$retryCtrl = rConfig('retry', 'Default')
 	
-	;~ Arena
-	$arenaCtrl = rConfig('arena', 'Daily')
-	$arenaNormalCtrl = rConfig('normal', 'Daily')
-	$arenaPrepareCtrl = rConfig('prepare', 'Daily')
-	$arenaAutoCtrl = rConfig('auto', 'Daily')
-	$arenaBattleCtrl = rConfig('battle', 'Daily')
-	$arenaOkCtrl = rConfig('ok', 'Daily')
-
 	$gMsg = GUIGetMsg()
 	switch $gMsg
 		case $GUI_EVENT_CLOSE
