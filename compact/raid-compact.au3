@@ -1,30 +1,60 @@
 #requireAdmin
-#pragma compile(Icon, icon/Mai4_Icon.ico)
-#include <processing.au3>
+#pragma compile(Icon, icon.ico)
+#include <image-process.au3>
 #include <WinAPI.au3>
 #include <Date.au3>
 #include <Array.au3>
 #include <GUIConstantsEx.au3>
-#include <src/pixelPoints.au3>
 
-global $gName = 'Seven Knights 2'
-global $hWND = WinGetHandle($gName)
-global $paused = false
-global $isGoing = false
+global $gName = 'Seven Knights 2', $hWND = WinGetHandle($gName)
+global $paused = false, $isGoing = false
 global $gTimer, $gSec, $gMin, $gHour, $gTime
 global $count = 0
-global $arrPlay[4] = ['🟡 🔹 🔹', '🔹 🟡 🔹', '🔹 🔹 🟡', '🔹 🔹 🔹']
+global $arrPlay[16] = ['🔸 🔸 🔸', '🟡 🔸 🔸', '🟡 🟡 🔸', '🟡 🟡 🟡', '🔸 🔸 🔸', '🟨 🔸 🔸', '🟨 🟨 🔸', '🟨 🟨 🟨', '🔸 🔸 🔸', '⚙️ 🔸 🔸', '⚙️ ⚙️ 🔸', '⚙️ ⚙️ ⚙️', '🔸 🔸 🔸', '❤️ 🔸 🔸', '❤️ ❤️ 🔸', '❤️ ❤️ ❤️']
 global $arrIdle[3] = ['🟡  HOME : play & pause ', '🟡  END : exit ', '🟡  F5 : resize window ']
+
+; raid party's lobby
+global $start = [829, 438], $startColor = '0x5C79D5'
+global $member = [773, 461], $memberColor = '0xFBFBFC'
+
+; raid party select
+global $ticket = [379, 345], $ticketColor = '0x121722'
+global $retry = [713, 254], $retryColor = '0xDC9598'
+global $issue = [471, 150], $issueColor = '0x383D46'
 
 Opt("MouseCoordMode", 2)
 HotKeySet("{END}", "onExit")
-HotKeySet("{HOME}", "onGo")
+HotKeySet("{HOME}", "togglePlay")
 HotKeySet("{F5}", "setWindowSize")
 
 setWindowSize()
 $gTimer = TimerInit()
+AdlibRegister("fetchTitle", 1000)
 
-while Sleep(250)
+while Sleep(2000)
+	if $paused == true then
+		color($member, $memberColor, 0, 0, 'member', 'active ready')
+		color($start, $startColor, 0, 20, "", 'active start')
+		color($ticket, $ticketColor, 0, 0, "", 'active ticket')
+		color($retry, $retryColor, 0, 72, "", 'active retry')
+		color($issue, $issueColor, 0, 190, "", 'active issue')
+		$isGoing = true
+	else
+		$isGoing = false
+	endif
+wend
+
+func togglePlay()
+	$paused = not $paused
+	if $paused == true then
+		WinSetTitle($hWND, "", $gName&' '&'🔅 on')
+	else
+		WinSetTitle($hWND, "", $gName&' '&'🔅 off')
+	endif
+	return $paused
+endfunc
+
+func fetchTitle()
 	_TicksToTime(Int(TimerDiff($gTimer)), $gHour, $gMin, $gSec)
 	local $sTime = $gTime
 	local $gTime = timeFormat($gHour, $gMin, $gSec)
@@ -48,27 +78,6 @@ while Sleep(250)
 
 		endif
 	endif
-wend
-
-func onGo()
-	$paused = not $paused
-	if $paused == true then
-		setWindowSize()
-		WinSetTitle($hWND, "", $gName&' '&'🔅 on')
-		$isGoing = true
-		AdlibRegister("findColors", 250)
-	else
-		WinSetTitle($hWND, "", $gName&' '&'🔅 off')
-		$isGoing = false
-		AdlibUnRegister("findColors")
-	endif
-endfunc
-
-func findColors()
-	color($member, $memberColor, 0, 0, 'member', 'active ready')
-	color($start, $startColor, 0, 20, "", 'active start')
-	color($ticket, $ticketColor, 0, 0, "", 'active ticket')
-	color($retry, $retryColor, 0, 72, "", 'active retry')
 endfunc
 
 func timeFormat($h, $m, $s)
@@ -143,16 +152,20 @@ endfunc
 func setWindowSize()
 	WinActivate($hWND)
 	$pos = WinGetPos($hWND)
-	$newX = (@DesktopWidth - $pos[2]) / 2
-	$newY = (@DesktopHeight - $pos[3]) / 2
+	if UBound($pos) <> 0 then
+		$newX = (@DesktopWidth - $pos[2]) / 2
+		$newY = (@DesktopHeight - $pos[3]) / 2
 
-	if $pos[2] <> 960 or $pos[3] <> 540 then
-		WinMove($hWND, '', $newX, $newY, 960, 540)
+		if $pos[2] <> 960 or $pos[3] <> 540 then
+			WinMove($hWND, '', $newX, $newY, 960, 540)
+		endif
+
+		WinActivate($hWND)
 	endif
-	WinActivate($hWND)
 endfunc
 
 func onExit()
+	AdlibUnRegister("fetchTitle")
 	$gName = 'Seven Knights 2'
 	WinSetTitle($hWND, "", $gName)
 	MsgBox(0, "Exit", "The app is shutting down.", .5)
