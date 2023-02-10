@@ -15,7 +15,7 @@
 ## usage:
 
 - create a party or join a room
-- open RaidScript.exe
+- open raid-script.exe
 - press Start button
 
 ## windows security alert! ⚠️ :
@@ -23,7 +23,6 @@
 - Settings > Privacy & security > Window Security > Manage settings > Add or remove exclusions
 - add a folder
 
-<br>
 <br>
 
 # raid-compact
