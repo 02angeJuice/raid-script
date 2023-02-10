@@ -6,7 +6,7 @@
 
 <br>
 
-## inform:
+## information:
 
 - while the program is running, mouse cursor can't control
 - change the game language setting to English
