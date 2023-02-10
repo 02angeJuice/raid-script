@@ -30,6 +30,7 @@
 ```
 a light version but no gui
 ```
+- the hotkeys for compact version
 
 | hotkeys | details       |
 | ------- | ------------- |
