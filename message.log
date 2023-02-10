@@ -25,3 +25,7 @@
 2023-02-09 19:38:26 : set retry - enable
 2023-02-09 19:38:27 : set window position [780,57]
 2023-02-09 19:38:27 : app exit
+2023-02-10 19:51:48 : load loadGUI() successful.
+2023-02-10 19:51:48 : load setWindowSize() failed!
+2023-02-10 19:51:48 : set ticket - enable
+2023-02-10 19:51:48 : set retry - enable

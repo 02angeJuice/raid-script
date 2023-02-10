@@ -1,24 +1,39 @@
-# Seven Knights 2 - RaidScript
+# raid-script
 
-[![GitHub](https://img.shields.io/github/downloads/02angeJuice/raid-script/total)](https://github.com/02angeJuice/raid-script/releases)
 [![GitHub](https://img.shields.io/github/v/release/02angeJuice/raid-script)](https://github.com/02angeJuice/raid-script/releases)
 
-## 4-Player Daily Raid
+## 4 players daily raid
 
 <br>
 
-`ก่อนใช้งาน:`
+## features:
 
-- ขณะโปรแกรมทำงาน เม้าส์จะควบคุมไม่ได้
-- เปลี่ยนภาษาตัวเกมเป็น English
+- while the program is running, mouse cursor can't control
+- change the game language setting to English
+- can choose options in Settings tab
 
-`ขั้นตอนการใช้งาน:`
+## usage:
 
-- สร้างห้อง หรือเข้าไปจอยในห้อง
-- เปิดไฟล์ RaidScript.exe ปรับตั้งค่า Settings
-- กด Start (แก้ Settings ภายหลังได้)
+- create a party or join a room
+- open RaidScript.exe
+- press Start button
 
-`โดน Windows Security ลบไฟล์ ⚠️ :`
+## windows security alert! ⚠️ :
 
-- ไปที่ Settings > Privacy & security > Window Security > Manage settings > Add or remove exclusions
-- Add Folder ที่ต้องการ
+- Settings > Privacy & security > Window Security > Manage settings > Add or remove exclusions
+- add a folder
+
+<br>
+<br>
+
+# raid-compact
+
+```
+a light version but no gui
+```
+
+| hotkeys | details       |
+| ------- | ------------- |
+| HOME    | play & pause  |
+| END     | exit          |
+| F5      | resize window |
