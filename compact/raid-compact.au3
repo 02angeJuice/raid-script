@@ -7,7 +7,7 @@
 #include <GUIConstantsEx.au3>
 
 global $gName = 'Seven Knights 2', $hWND = WinGetHandle($gName)
-global $paused = false, $isGoing = false
+global $paused = false, $titlePaused = false
 global $gTimer, $gSec, $gMin, $gHour, $gTime
 global $count = 0
 global $arrPlay[16] = ['🔸 🔸 🔸', '🟡 🔸 🔸', '🟡 🟡 🔸', '🟡 🟡 🟡', '🔸 🔸 🔸', '🟨 🔸 🔸', '🟨 🟨 🔸', '🟨 🟨 🟨', '🔸 🔸 🔸', '⚙️ 🔸 🔸', '⚙️ ⚙️ 🔸', '⚙️ ⚙️ ⚙️', '🔸 🔸 🔸', '❤️ 🔸 🔸', '❤️ ❤️ 🔸', '❤️ ❤️ ❤️']
@@ -31,28 +31,28 @@ setWindowSize()
 $gTimer = TimerInit()
 AdlibRegister("fetchTitle", 1000)
 
+func togglePlay()
+	$paused = not $paused
+	if $paused <> true then
+		WinSetTitle($hWND, "", $gName&' '&'🔅 off')
+	else
+		WinSetTitle($hWND, "", $gName&' '&'🔅 on')
+	endif
+	return $paused
+endfunc
+
 while Sleep(2000)
-	if $paused == true then
+	if $paused <> true then
+		$titlePaused = false
+	else
+		$titlePaused = true
 		color($member, $memberColor, 0, 0, 'member', 'active ready')
 		color($start, $startColor, 0, 20, "", 'active start')
 		color($ticket, $ticketColor, 0, 0, "", 'active ticket')
 		color($retry, $retryColor, 0, 72, "", 'active retry')
 		color($issue, $issueColor, 0, 190, "", 'active issue')
-		$isGoing = true
-	else
-		$isGoing = false
 	endif
 wend
-
-func togglePlay()
-	$paused = not $paused
-	if $paused == true then
-		WinSetTitle($hWND, "", $gName&' '&'🔅 on')
-	else
-		WinSetTitle($hWND, "", $gName&' '&'🔅 off')
-	endif
-	return $paused
-endfunc
 
 func fetchTitle()
 	_TicksToTime(Int(TimerDiff($gTimer)), $gHour, $gMin, $gSec)
@@ -62,7 +62,7 @@ func fetchTitle()
 	if $sTime <> $gTime then
 		local $titlAdd = $gTime
 
-		if $isGoing <> true then
+		if $titlePaused <> true then
 			if mod($gSec, 5) == 0 then
 				WinSetTitle($hWND, "", $gName&' '&$arrIdle[1])
 			else
@@ -75,8 +75,8 @@ func fetchTitle()
 			if $count == UBound($arrPlay) then
 				$count = 0
 			endif
-
 		endif
+
 	endif
 endfunc
 
