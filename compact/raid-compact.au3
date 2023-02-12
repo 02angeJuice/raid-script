@@ -1,10 +1,14 @@
 #requireAdmin
-#pragma compile(Icon, icon.ico)
-#include <image-process.au3>
+#pragma compile(Icon, ./src/icon.ico)
+#include <./src/image-process.au3>
 #include <WinAPI.au3>
 #include <Date.au3>
 #include <Array.au3>
 #include <GUIConstantsEx.au3>
+#Include <StaticConstants.au3>
+#Include <WindowsConstants.au3>
+
+#include "./src/animate.au3"
 
 global $gName = 'Seven Knights 2', $hWND = WinGetHandle($gName)
 global $paused = false, $titlePaused = false
@@ -22,14 +26,37 @@ global $ticket = [379, 345], $ticketColor = '0x121722'
 global $retry = [713, 254], $retryColor = '0xDC9598'
 global $issue = [471, 150], $issueColor = '0x383D46'
 
+Opt('MustDeclareVars', 1)
+Opt('TrayAutoPause', 0)
+
 Opt("MouseCoordMode", 2)
+
 HotKeySet("{END}", "onExit")
 HotKeySet("{HOME}", "togglePlay")
 HotKeySet("{F5}", "setWindowSize")
 
 setWindowSize()
+trayAnimate('gear','on', 40)
+
 $gTimer = TimerInit()
 AdlibRegister("fetchTitle", 1000)
+
+while Sleep(2000)
+	if $paused <> true then
+		TraySetIcon("./src/icon.ico")
+		_Animate_Stop()
+		$titlePaused = false
+	else
+		_Animate_Start("", 1)
+		$titlePaused = true
+		
+		color($member, $memberColor, 0, 0, 'member', 'active ready')
+		color($start, $startColor, 0, 20, "", 'active start')
+		color($ticket, $ticketColor, 0, 0, "", 'active ticket')
+		color($retry, $retryColor, 0, 72, "", 'active retry')
+		color($issue, $issueColor, 0, 190, "", 'active issue')
+	endif
+wend
 
 func togglePlay()
 	$paused = not $paused
@@ -41,18 +68,17 @@ func togglePlay()
 	return $paused
 endfunc
 
-while Sleep(2000)
-	if $paused <> true then
-		$titlePaused = false
+func trayAnimate($name, $order, $frames=0)
+	local $n = '\' & $name & '\' & $name & '-'
+	if $order == 'on' then
+		For $i = 0 To $frames
+			_Animate_AddIcon('./src'& $n & $i & '.ico', 0)
+		Next
+		return 1
 	else
-		$titlePaused = true
-		color($member, $memberColor, 0, 0, 'member', 'active ready')
-		color($start, $startColor, 0, 20, "", 'active start')
-		color($ticket, $ticketColor, 0, 0, "", 'active ticket')
-		color($retry, $retryColor, 0, 72, "", 'active retry')
-		color($issue, $issueColor, 0, 190, "", 'active issue')
+		return 0
 	endif
-wend
+endfunc
 
 func fetchTitle()
 	_TicksToTime(Int(TimerDiff($gTimer)), $gHour, $gMin, $gSec)
@@ -63,16 +89,12 @@ func fetchTitle()
 		local $titlAdd = $gTime
 
 		if $titlePaused <> true then
-			if mod($gSec, 5) == 0 then
-				WinSetTitle($hWND, "", $gName&' '&$arrIdle[1])
-			else
-				WinSetTitle($hWND, "", $gName&' '&$arrIdle[0]&' '&$arrIdle[2])
-			endif
+			WinSetTitle($hWND, "", $gName&' '&$arrIdle[0]&' '&$arrIdle[2]&' '&$arrIdle[1])
 		else
 			WinSetTitle($hWND, "", $gName&' '&$arrPlay[$count])
 			$count += 1
 
-			if $count == UBound($arrPlay) then
+			if $count == UBound($arrPlay) then	;~ $count == $arrPlay.length
 				$count = 0
 			endif
 		endif
@@ -92,9 +114,9 @@ endfunc
 
 func color($position, $color, $addX = 0, $addY = 0, $optional ="", $msg ='')
 	FFSnapShot(0, 0, 0, 0, 1, $hWND)
-	$colorCode = Hex(FFGetPixel($position, 1))
-	$trimCode = StringTrimLeft($colorCode, 2)
-	$targetCode =  "0x"&$trimCode
+	local $colorCode = Hex(FFGetPixel($position, 1))
+	local $trimCode = StringTrimLeft($colorCode, 2)
+	local $targetCode =  "0x"&$trimCode
 
 	if $targetCode == $color then
 		if $optional == 'member' then
@@ -151,10 +173,10 @@ endfunc
 
 func setWindowSize()
 	WinActivate($hWND)
-	$pos = WinGetPos($hWND)
+	local $pos = WinGetPos($hWND)
 	if UBound($pos) <> 0 then
-		$newX = (@DesktopWidth - $pos[2]) / 2
-		$newY = (@DesktopHeight - $pos[3]) / 2
+		local $newX = (@DesktopWidth - $pos[2]) / 2
+		local $newY = (@DesktopHeight - $pos[3]) / 2
 
 		if $pos[2] <> 960 or $pos[3] <> 540 then
 			WinMove($hWND, '', $newX, $newY, 960, 540)

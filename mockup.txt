@@ -1,0 +1,28 @@
+BACK		0xFEFEFE		45, 7
+
+
+*Shop		0xF01F1F		140, 8
+Mole		0xF82A2A		862, 280
+- FreeMaps	0xF82A2A		219, 262
+
+
+
+!Buy		0x619AE6		473, 386
+
+
+
+Mail		0xF62B2B		263, 7
+
+Arena		0xF21F1F		138, 60
+Dungeons	0xF42F2F		67, 130
+Raid		0xF21F1F		138, 130
+Tower		0xF42F2F		208, 130
+
+ClearAll	0xEAEAEA		537, 401
+
+LevelUp	0xF42323		787, 60
+Craft		0xE33333		857, 201
+Guild		0xF21F1F		787, 272
+
+*Friends	0xF42F2F		857, 272
+SendAll	0xDB2F30		925, 439

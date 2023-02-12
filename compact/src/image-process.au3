@@ -17,7 +17,7 @@ func InitFFDll()
 	else
 		global $DllName = "pixel-processing.dll"
 	endif
-		$FFDllHandle = DllOpen($DllName)
+		$FFDllHandle = DllOpen('.././'&$DllName)
 	if $FFDllHandle=-1 then
 		$FFDllHandle=$DllName
 		MsgBox(0,"Error","Failed to load "&$DllName&", application probably won't properly work. "&@LF&"Check if the file "&$DllName&"is installed near this script")
@@ -73,7 +73,7 @@ func FFSnapShot(const $Left=0, const $Top=0, const $Right=0, const $Bottom=0, co
 endfunc
 
 func FFGetVersion()
-	$Result = DllCall($FFDllHandle, "str", "FFVersion")
+	local $Result = DllCall($FFDllHandle, "str", "FFVersion")
 	if ( (not IsArray($Result))  ) then
 		SetError(2)
 		return "???"
@@ -82,7 +82,7 @@ func FFGetVersion()
 endfunc
 
 func FFGetPixel($pos, $NoSnapShot=$FFLastSnap)
-	$Result = DllCall($FFDllHandle, "int", "FFGetPixel", "int", $pos[0], "int", $pos[1], "int", $NoSnapShot)
+	local $Result = DllCall($FFDllHandle, "int", "FFGetPixel", "int", $pos[0], "int", $pos[1], "int", $NoSnapShot)
 	if ( (not IsArray($Result)) or ($Result[0]=-1) ) then
 		SetError(2)
 		return -1
