@@ -41,7 +41,7 @@ trayAnimate('gear','on', 40)
 $gTimer = TimerInit()
 AdlibRegister("fetchTitle", 1000)
 
-while Sleep(2000)
+while Sleep(1500)
 	if $paused <> true then
 		TraySetIcon("./src/icon.ico")
 		_Animate_Stop()
@@ -49,7 +49,7 @@ while Sleep(2000)
 	else
 		_Animate_Start("", 1)
 		$titlePaused = true
-		
+
 		color($member, $memberColor, 0, 0, 'member', 'active ready')
 		color($start, $startColor, 0, 20, "", 'active start')
 		color($ticket, $ticketColor, 0, 0, "", 'active ticket')
