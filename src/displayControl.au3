@@ -19,7 +19,7 @@ endfunc
 
 func loadGUI()
 	#Region ### START Koda GUI section ### Form=c:\users\b0\desktop\raid_script_gui\raid-script-form.kxf
-	GUICreate("RaidScript", 471, 184, sizeGUI('x'), sizeGUI('y'), $GUI_SS_DEFAULT_GUI)
+	GUICreate("RaidScript 1.4.1", 471, 184, sizeGUI('x'), sizeGUI('y'), $GUI_SS_DEFAULT_GUI)
 
 	GUISetFont(8, 400, 0, "consolas")
 	global $Tab1 = GUICtrlCreateTab(8, 8, 457, 169, $TCS_FIXEDWIDTH)
