@@ -18,11 +18,11 @@ global $arrPlay[16] = ['🔸 🔸 🔸', '🟡 🔸 🔸', '🟡 🟡 🔸', '�
 global $arrIdle[3] = ['🟡  HOME : play & pause ', '🟡  END : exit ', '🟡  F5 : resize window ']
 
 ; raid party's lobby
-global $start = [829, 438], $startColor = '0x5C79D5'
+global $start = [835, 459], $startColor = '0xFCFCFD'
 global $member = [773, 461], $memberColor = '0xFBFBFC'
 
 ; raid party select
-global $ticket = [379, 345], $ticketColor = '0x121722'
+global $ticket = [386, 343], $ticketColor = '0x121622'
 global $retry = [713, 254], $retryColor = '0xDC9598'
 global $issue = [471, 150], $issueColor = '0x383D46'
 
